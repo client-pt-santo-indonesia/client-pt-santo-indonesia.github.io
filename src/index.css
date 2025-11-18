@@ -17,3 +17,18 @@
     background-color: #F7F8FF;
   }
 }
+
+.page-transition {
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.page-transition.page-enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition.page-exit {
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+}

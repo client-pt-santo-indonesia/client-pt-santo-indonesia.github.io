@@ -1,4 +1,5 @@
 import ContactForm from '../components/ContactForm'
+import CtaBanner from '../components/CtaBanner'
 import { contactInfo } from '../data/siteContent'
 
 const Contact = () => (
@@ -48,6 +49,14 @@ const Contact = () => (
         <ContactForm />
       </div>
     </section>
+    <CtaBanner
+      tone="dark"
+      eyebrow="Lebih nyaman bicara langsung?"
+      title="Hubungi kami via WhatsApp atau jadwalkan kunjungan onsite."
+      description="Tim kami siap merespons dalam 24 jam kerja dan menyiapkan NDA bila dibutuhkan."
+      primary={{ label: 'Chat WhatsApp', href: contactInfo.whatsapp }}
+      secondary={{ label: 'Lihat Produk Kami', href: '/products' }}
+    />
   </main>
 )
 

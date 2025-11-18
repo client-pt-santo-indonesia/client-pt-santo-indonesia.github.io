@@ -3,9 +3,10 @@ import { Link, NavLink } from 'react-router-dom'
 
 const navItems = [
   { label: 'Home', path: '/' },
+  { label: 'About Us', path: '/about' },
+  { label: 'Products', path: '/products' },
   { label: 'Our Clients', path: '/clients' },
   { label: 'Our Projects', path: '/projects' },
-  { label: 'About Us', path: '/about' },
   { label: 'Contact', path: '/contact' },
 ]
 

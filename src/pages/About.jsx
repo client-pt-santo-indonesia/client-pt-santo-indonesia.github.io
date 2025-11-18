@@ -1,4 +1,5 @@
 import AboutSection from '../components/AboutSection'
+import CtaBanner from '../components/CtaBanner'
 import { companyInfo } from '../data/siteContent'
 
 const About = () => (
@@ -28,6 +29,13 @@ const About = () => (
         ))}
       </div>
     </section>
+    <CtaBanner
+      eyebrow="Perlu workshop singkat?"
+      title="Jadwalkan sesi discovery 90 menit dengan konsultan kami."
+      description="Kami bantu memetakan proses prioritas, risiko implementasi, serta resource yang dibutuhkan."
+      primary={{ label: 'Booking Konsultasi', href: '/contact' }}
+      secondary={{ label: 'Kenali Produk', href: '/products' }}
+    />
   </main>
 )
 

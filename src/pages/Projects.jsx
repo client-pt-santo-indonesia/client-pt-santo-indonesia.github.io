@@ -1,4 +1,5 @@
 import ProjectsSection from '../components/ProjectsSection'
+import CtaBanner from '../components/CtaBanner'
 import { projects } from '../data/siteContent'
 
 const Projects = () => (
@@ -17,6 +18,13 @@ const Projects = () => (
       enableFilter
       title="Eksplorasi Project Kami"
       description="Gunakan filter industri untuk menemukan referensi yang relevan dengan bisnis Anda."
+    />
+    <CtaBanner
+      eyebrow="Butuh studi kelayakan?"
+      title="Kirimkan tantangan otomasi Anda, kami bantu hitung ROI-nya."
+      description="Tim solution architect akan menyiapkan simulasi benefit finansial berdasarkan data produksi Anda."
+      primary={{ label: 'Diskusi Proyek', href: '/contact' }}
+      secondary={{ label: 'Unduh Company Profile', href: '/products' }}
     />
   </main>
 )

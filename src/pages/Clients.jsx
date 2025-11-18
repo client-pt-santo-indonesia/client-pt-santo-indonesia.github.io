@@ -1,4 +1,5 @@
 import ClientsSection from '../components/ClientsSection'
+import CtaBanner from '../components/CtaBanner'
 import { clients } from '../data/siteContent'
 
 const Clients = () => (
@@ -31,6 +32,14 @@ const Clients = () => (
         </div>
       </div>
     </section>
+    <CtaBanner
+      tone="dark"
+      eyebrow="Siap jadi partner berikutnya?"
+      title="Mulai dengan sesi assessment gratis untuk lini prioritas Anda."
+      description="Pilih area produksi atau warehouse yang ingin dioptimalkan dan kami siapkan proposal implementasi awal."
+      primary={{ label: 'Request Assessment', href: '/contact' }}
+      secondary={{ label: 'Lihat Produk', href: '/products' }}
+    />
   </main>
 )
 
