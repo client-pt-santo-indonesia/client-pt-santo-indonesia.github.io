@@ -6,10 +6,11 @@ const Projects = () => (
   <main>
     <section className="bg-brand-secondary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Case Studies</p>
-        <h1 className="mt-4 text-4xl font-semibold">Project automasi dengan KPI terukur</h1>
+        <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Project Portfolio</p>
+        <h1 className="mt-4 text-4xl font-semibold">Lini Packaging & Robotik yang Telah Kami Implementasikan</h1>
         <p className="mt-4 text-base text-brand-accent">
-          Kami fokus pada ROI nyata: penghematan energi, percepatan siklus produksi, dan keamanan kerja yang meningkat.
+          Portfolio berikut merangkum bottle line, cup packaging, hingga sachet system yang dirancang untuk memenuhi
+          standar F&B serta farmasi Indonesia.
         </p>
       </div>
     </section>
@@ -21,10 +22,10 @@ const Projects = () => (
     />
     <CtaBanner
       eyebrow="Butuh studi kelayakan?"
-      title="Kirimkan tantangan otomasi Anda, kami bantu hitung ROI-nya."
-      description="Tim solution architect akan menyiapkan simulasi benefit finansial berdasarkan data produksi Anda."
+      title="Sampaikan target kapasitas produksi, kami bantu hitung konfigurasi mesin terbaik."
+      description="Tim solution architect akan menyiapkan simulasi throughput, kebutuhan utility, dan estimasi investasi."
       primary={{ label: 'Diskusi Proyek', href: '/contact' }}
-      secondary={{ label: 'Unduh Company Profile', href: '/products' }}
+      secondary={{ label: 'Lihat Solusi', href: '/products' }}
     />
   </main>
 )

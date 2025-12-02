@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { companyInfo } from '../data/siteContent'
 
 const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
-  { label: 'Products', path: '/products' },
+  { label: 'Solutions', path: '/products' },
   { label: 'Our Clients', path: '/clients' },
   { label: 'Our Projects', path: '/projects' },
   { label: 'Contact', path: '/contact' },
@@ -17,7 +18,8 @@ const Navbar = () => {
     <header className="bg-brand-primary text-white sticky top-0 z-50 shadow-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="text-xl font-semibold tracking-wide">
-          Lembono<span className="text-brand-highlight">.</span>
+          {companyInfo.name.replace('PT. ', '')}
+          <span className="text-brand-highlight">.</span>
         </Link>
         <button
           type="button"
@@ -41,10 +43,7 @@ const Navbar = () => {
               {item.label}
             </NavLink>
           ))}
-          <Link
-            to="/contact"
-            className="rounded-full bg-brand-highlight px-4 py-2 text-sm font-semibold text-brand-primary"
-          >
+          <Link to="/contact" className="rounded-full bg-brand-highlight px-4 py-2 text-sm font-semibold text-white">
             Konsultasi
           </Link>
         </div>
@@ -68,7 +67,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="block rounded-full bg-brand-highlight px-4 py-2 text-center text-sm font-semibold text-brand-primary"
+            className="block rounded-full bg-brand-highlight px-4 py-2 text-center text-sm font-semibold text-white"
           >
             Konsultasi
           </Link>

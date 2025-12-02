@@ -1,20 +1,27 @@
-import { companyInfo, companyValues } from '../data/siteContent'
+import { businessLines, companyInfo, companyValues } from '../data/siteContent'
 
 const AboutSection = ({ compact = false }) => (
   <section className="bg-white py-16" id="about">
     <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-highlight">About Us</p>
-        <h2 className="mt-3 text-3xl font-semibold text-brand-primary">Engineering Sejak {companyInfo.founded}</h2>
-        <p className="mt-4 text-base leading-7 text-brand-secondary">{companyInfo.description}</p>
-        <div className="mt-6 grid grid-cols-2 gap-4 rounded-2xl bg-brand-background p-6 text-center text-brand-primary sm:max-w-md">
+        <h2 className="mt-3 text-3xl font-semibold text-brand-primary">
+          Engineering Packaging Sejak {companyInfo.history.workshopFounded}
+        </h2>
+        <p className="mt-4 text-base leading-7 text-brand-secondary">{companyInfo.history.narrative}</p>
+        <p className="mt-4 text-base leading-7 text-brand-secondary">{companyInfo.capabilitiesOverview}</p>
+        <div className="mt-6 grid grid-cols-3 gap-4 rounded-2xl bg-brand-background p-6 text-center text-brand-primary sm:max-w-xl">
           <div>
-            <p className="text-3xl font-semibold">{companyInfo.team}+</p>
-            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Engineer</p>
+            <p className="text-3xl font-semibold">{companyInfo.history.workshopFounded}</p>
+            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Workshop berdiri</p>
           </div>
           <div>
-            <p className="text-3xl font-semibold">150+</p>
-            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Project</p>
+            <p className="text-3xl font-semibold">{companyInfo.history.ptEstablished}</p>
+            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">PT dibentuk</p>
+          </div>
+          <div>
+            <p className="text-3xl font-semibold">{businessLines.length}</p>
+            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Lini solusi</p>
           </div>
         </div>
       </div>
@@ -28,10 +35,7 @@ const AboutSection = ({ compact = false }) => (
         ))}
         {!compact && (
           <div className="rounded-2xl border border-dashed border-brand-highlight px-6 py-4 text-sm text-brand-secondary">
-            <p>
-              Kami membuka kesempatan kolaborasi dengan integrator lokal, kampus vokasi, dan vendor komponen yang
-              selaras dengan visi kami.
-            </p>
+            <p>{companyInfo.valueProposition}</p>
           </div>
         )}
       </div>

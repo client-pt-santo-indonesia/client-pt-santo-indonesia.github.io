@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import { companyInfo } from '../data/siteContent'
+import { companyInfo, contactInfo } from '../data/siteContent'
 
 const Footer = () => (
   <footer className="bg-brand-secondary text-brand-accent">
     <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 sm:px-6 lg:px-8">
       <div>
-        <p className="text-lg font-semibold text-white">Lembono Automation</p>
+        <p className="text-lg font-semibold text-white">{companyInfo.name}</p>
         <p className="mt-3 text-sm leading-7 text-brand-accent/80">{companyInfo.description}</p>
       </div>
       <div>
@@ -31,19 +31,29 @@ const Footer = () => (
       <div>
         <p className="text-sm font-semibold text-white uppercase tracking-wide">Kontak</p>
         <ul className="mt-3 space-y-2 text-sm">
-          <li>{companyInfo.name}</li>
-          <li>Tel: +62 811-2233-4455</li>
-          <li>Email: hello@lembono.com</li>
+          <li>{contactInfo.address}</li>
+          <li>Tel: {contactInfo.phone}</li>
+          <li>Email: {contactInfo.email}</li>
         </ul>
       </div>
       <div>
         <p className="text-sm font-semibold text-white uppercase tracking-wide">Ikuti Kami</p>
-        <p className="mt-3 text-sm">LinkedIn · Instagram · YouTube</p>
+        <a
+          href="https://www.facebook.com/ptsantoindonesia"
+          target="_blank"
+          rel="noreferrer"
+          className="mt-3 inline-flex items-center text-sm text-brand-accent hover:text-white"
+        >
+          Facebook
+          <span aria-hidden="true" className="ml-2 text-xs">
+            ↗
+          </span>
+        </a>
       </div>
     </div>
     <div className="border-t border-white/10">
       <p className="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-brand-accent/80 sm:px-6 lg:px-8">
-        © {new Date().getFullYear()} Lembono Automation. All rights reserved.
+        © {new Date().getFullYear()} {companyInfo.name}. All rights reserved.
       </p>
     </div>
   </footer>
