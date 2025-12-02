@@ -7,7 +7,7 @@ const CTAButton = ({ href, label, variant = 'primary', tone = 'light' }) => {
 
   const palettes = {
     light: {
-      primary: 'bg-brand-highlight text-brand-primary hover:-translate-y-0.5 focus-visible:ring-brand-highlight/60',
+      primary: 'bg-brand-highlight text-white hover:-translate-y-0.5 focus-visible:ring-brand-highlight/60',
       secondary:
         'border border-brand-primary/30 text-brand-primary hover:bg-brand-primary hover:text-white focus-visible:ring-brand-primary/50',
     },

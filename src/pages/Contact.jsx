@@ -1,4 +1,3 @@
-import ContactForm from '../components/ContactForm'
 import CtaBanner from '../components/CtaBanner'
 import { contactInfo } from '../data/siteContent'
 
@@ -46,7 +45,43 @@ const Contact = () => (
             />
           </div>
         </div>
-        <ContactForm />
+        <div className="space-y-6">
+          <div className="rounded-3xl bg-white p-6 shadow-2xl">
+            <h2 className="text-2xl font-semibold text-brand-primary">Cara cepat terhubung</h2>
+            <p className="mt-3 text-sm leading-7 text-brand-secondary">
+              Kirimkan voice note, spesifikasi produk, atau layout pabrik Anda melalui kanal berikut. Tim kami akan
+              menjawab maksimal dalam 24 jam kerja.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href={contactInfo.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex flex-1 items-center justify-center rounded-full bg-brand-highlight px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+              >
+                Chat WhatsApp
+              </a>
+              <a
+                href={`mailto:${contactInfo.email}`}
+                className="inline-flex flex-1 items-center justify-center rounded-full border border-brand-primary/30 px-5 py-3 text-sm font-semibold text-brand-primary transition hover:bg-brand-primary hover:text-white"
+              >
+                Kirim Email
+              </a>
+            </div>
+            <div className="mt-6 space-y-2 text-sm text-brand-secondary">
+              <p>✅ Sertakan jenis produk & target output per jam</p>
+              <p>✅ Lampirkan foto mesin eksisting bila ada</p>
+              <p>✅ Tulis preferensi brand komponen (PLC, robot, dll.)</p>
+            </div>
+          </div>
+          <div className="rounded-3xl bg-white p-6 shadow-lg">
+            <h3 className="text-xl font-semibold text-brand-primary">Butuh NDA?</h3>
+            <p className="mt-3 text-sm leading-7 text-brand-secondary">
+              Kami siap menandatangani Non Disclosure Agreement sebelum menerima data teknis Anda. Kirimkan draft ke
+              email kami dan sebutkan PIC legal yang dapat kami hubungi.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <CtaBanner

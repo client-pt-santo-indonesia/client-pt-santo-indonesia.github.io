@@ -43,10 +43,7 @@ const Navbar = () => {
               {item.label}
             </NavLink>
           ))}
-          <Link
-            to="/contact"
-            className="rounded-full bg-brand-highlight px-4 py-2 text-sm font-semibold text-brand-primary"
-          >
+          <Link to="/contact" className="rounded-full bg-brand-highlight px-4 py-2 text-sm font-semibold text-white">
             Konsultasi
           </Link>
         </div>
@@ -70,7 +67,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="block rounded-full bg-brand-highlight px-4 py-2 text-center text-sm font-semibold text-brand-primary"
+            className="block rounded-full bg-brand-highlight px-4 py-2 text-center text-sm font-semibold text-white"
           >
             Konsultasi
           </Link>
