@@ -6,7 +6,7 @@ const Products = () => (
   <main className="bg-white">
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
       <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">Business Lines</p>
-      <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">Solusi packaging & robotik Santo</h1>
+      <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">Solusi Packaging & Robotik Santo</h1>
       <p className="mt-4 max-w-3xl text-base leading-7 text-brand-secondary">
         {companyInfo.valueProposition} Kami menyediakan lini lengkap mulai dari pick & place robot, bottle line, hingga
         panel elektrik dan pneumatic cabinet.

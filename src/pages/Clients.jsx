@@ -7,7 +7,7 @@ const Clients = () => (
     <section className="bg-brand-primary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Klien Packaging & Otomasi</p>
-        <h1 className="mt-4 text-4xl font-semibold">Solusi Santo untuk brand nasional & multinasional</h1>
+        <h1 className="mt-4 text-4xl font-semibold">Solusi Santo untuk Brand Nasional & Multinasional</h1>
         <p className="mt-4 text-base text-brand-accent">
           Dari bottle line untuk grup Charoen Pokphand hingga cup dan sachet system untuk industri dairy dan farmasi, kami
           memadukan mesin dan robotik agar produksi lebih efisien.

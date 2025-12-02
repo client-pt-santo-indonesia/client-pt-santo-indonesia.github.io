@@ -7,7 +7,7 @@ const Projects = () => (
     <section className="bg-brand-secondary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Project Portfolio</p>
-        <h1 className="mt-4 text-4xl font-semibold">Lini packaging & robotik yang telah kami implementasikan</h1>
+        <h1 className="mt-4 text-4xl font-semibold">Lini Packaging & Robotik yang Telah Kami Implementasikan</h1>
         <p className="mt-4 text-base text-brand-accent">
           Portfolio berikut merangkum bottle line, cup packaging, hingga sachet system yang dirancang untuk memenuhi
           standar F&B serta farmasi Indonesia.

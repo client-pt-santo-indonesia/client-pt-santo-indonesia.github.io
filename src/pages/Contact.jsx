@@ -7,7 +7,7 @@ const Contact = () => (
     <section className="bg-brand-primary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/60">Hubungi Santo Indonesia</p>
-        <h1 className="mt-4 text-4xl font-semibold">Diskusikan lini packaging dan robotik Anda</h1>
+        <h1 className="mt-4 text-4xl font-semibold">Diskusikan Lini Packaging dan Robotik Anda</h1>
         <p className="mt-4 text-base text-brand-accent">
           Kirimkan spesifikasi produk, target kapasitas, atau tantangan teknis dan kami akan merespons maks. 24 jam kerja.
         </p>

@@ -7,7 +7,7 @@ const About = () => (
     <section className="bg-brand-background py-16">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-[0.4em] text-brand-secondary">{companyInfo.name}</p>
-        <h1 className="mt-4 text-4xl font-semibold text-brand-primary">Integrator packaging & robotic system end-to-end</h1>
+        <h1 className="mt-4 text-4xl font-semibold text-brand-primary">Integrator Packaging & Robotic Systems</h1>
         <p className="mt-4 text-base leading-7 text-brand-secondary">
           Berawal dari workshop pada {companyInfo.history.workshopFounded} dan resmi menjadi perseroan pada{' '}
           {companyInfo.history.ptEstablished}, kami terus menghadirkan mesin dan lini packaging untuk industri food &
