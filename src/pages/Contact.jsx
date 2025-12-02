@@ -6,10 +6,10 @@ const Contact = () => (
   <main>
     <section className="bg-brand-primary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/60">Contact Us</p>
-        <h1 className="mt-4 text-4xl font-semibold">Mari wujudkan automasi impian Anda</h1>
+        <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/60">Hubungi Santo Indonesia</p>
+        <h1 className="mt-4 text-4xl font-semibold">Diskusikan lini packaging dan robotik Anda</h1>
         <p className="mt-4 text-base text-brand-accent">
-          Kirimkan detail kebutuhan Anda dan tim konsultan kami akan menghubungi maksimal dalam 24 jam kerja.
+          Kirimkan spesifikasi produk, target kapasitas, atau tantangan teknis dan kami akan merespons maks. 24 jam kerja.
         </p>
       </div>
     </section>
@@ -37,7 +37,7 @@ const Contact = () => (
           </div>
           <div className="rounded-3xl overflow-hidden shadow-lg">
             <iframe
-              title="Lokasi Lembono"
+              title="Lokasi Santo Indonesia"
               src={contactInfo.mapEmbed}
               loading="lazy"
               className="h-64 w-full border-0"

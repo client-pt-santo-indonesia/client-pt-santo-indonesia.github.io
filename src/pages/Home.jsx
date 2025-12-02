@@ -1,59 +1,59 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
-import { heroContent } from '../data/siteContent'
+import { companyInfo, heroContent } from '../data/siteContent'
 
 const carouselSlides = [
   {
-    id: 'retrofit',
-    title: 'Retrofit Lini Produksi',
-    description: 'Upgrade kontrol dan sensor untuk memastikan plant tua kembali presisi dan efisien.',
-    location: 'Bandung',
+    id: 'robotic-cup',
+    title: 'Pick & Place Cup Packaging',
+    description: 'Delta robot menata cup sebelum filling & sealing untuk menjaga higienitas dessert dan dairy.',
+    location: 'Sidoarjo',
     image:
-      'https://images.unsplash.com/photo-1457433575995-8407028a9970?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1581091215367-59ab6fe8399e?auto=format&fit=crop&w=1400&q=80',
   },
   {
-    id: 'warehouse',
-    title: 'Warehouse Automation',
-    description: 'Integrasi conveyor, AS/RS, dan dashboard monitoring untuk kapasitas 12.000 paket/jam.',
-    location: 'Surabaya',
+    id: 'bottle-line',
+    title: 'Bottle Rinsing, Filling & Capping',
+    description: 'Lini 3-in-1 untuk brand minuman nasional dengan persyaratan sanitasi ketat.',
+    location: 'Bekasi',
     image:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=1400&q=80',
   },
   {
-    id: 'scada',
-    title: 'SCADA Energi Terbarukan',
-    description: 'Kontrol pembangkit surya hingga turbin terpencil dengan SLA support 24/7.',
-    location: 'Kupang',
+    id: 'pouch-system',
+    title: 'Pouch & Bag Automation',
+    description: 'Auger filling serta sealing otomatis untuk powder dan liquid bernilai tinggi.',
+    location: 'Solo',
     image:
-      'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1400&q=80',
   },
 ]
 
 const navigationCards = [
   {
     title: 'About Us',
-    description: 'Nilai, tim, dan pengalaman Lembono Automation.',
+    description: 'Kenali perjalanan PT. Santo Indonesia dari workshop 2009 hingga integrator robotik.',
     path: '/about',
   },
   {
-    title: 'Products',
-    description: 'Solusi siap pakai untuk mempercepat upgrade pabrik Anda.',
+    title: 'Solutions',
+    description: 'Jelajahi lini bisnis dan mesin packaging yang siap dikonfigurasi.',
     path: '/products',
   },
   {
     title: 'Our Clients',
-    description: 'Cerita kolaborasi bersama brand nasional dan multinasional.',
+    description: 'Daftar brand nasional yang mempercayakan otomasi packaging.',
     path: '/clients',
   },
   {
-    title: 'Our Projects',
-    description: 'Detail implementasi mulai dari desain, instalasi, hingga training.',
+    title: 'Project Stories',
+    description: 'Ringkasan solusi bottle, cup, sachet, dan robotic system.',
     path: '/projects',
   },
   {
     title: 'Contact',
-    description: 'Konsultasi awal, jadwal site visit, atau permintaan proposal.',
+    description: 'Hubungi kami untuk konsultasi kebutuhan lini packaging Anda.',
     path: '/contact',
   },
 ]
@@ -84,9 +84,9 @@ const Home = () => {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-brand-primary/20 text-3xl font-semibold text-brand-primary">
-              L.
+              SI
             </div>
-            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">Lembono Automation</p>
+            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">{companyInfo.name}</p>
             <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">{heroContent.headline}</h1>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-brand-secondary">{heroContent.subheadline}</p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -94,13 +94,13 @@ const Home = () => {
                 to="/contact"
                 className="rounded-full bg-brand-highlight px-6 py-3 text-sm font-semibold uppercase tracking-widest text-brand-primary shadow-lg transition hover:translate-y-0.5"
               >
-                Konsultasi Sekarang
+                Jadwalkan Diskusi
               </Link>
               <Link
                 to="/products"
                 className="rounded-full border border-brand-primary/40 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-brand-primary transition hover:bg-brand-primary hover:text-white"
               >
-                Lihat Produk
+                Lihat Solusi
               </Link>
             </div>
           </div>
@@ -176,9 +176,9 @@ const Home = () => {
         </div>
       </section>
       <CtaBanner
-        eyebrow="Butuh diagnosa cepat?"
-        title="Tim engineer kami bisa membantu audit site dan menyusun scope kerja."
-        description="Ceritakan lini produksi Anda dan kami siapkan rencana implementasi termasuk estimasi biaya dan timeline."
+        eyebrow="Perlu masukan untuk lini packaging?"
+        title="Tim Santo siap mengaudit kebutuhan bottle, cup, pouch, maupun robotic handling Anda."
+        description="Kami siapkan scope kerja lengkap dengan opsi mesin yang sesuai spesifikasi produk dan roadmap implementasi."
         primary={{ label: 'Diskusikan Project', href: '/contact' }}
         secondary={{ label: 'Lihat Project Kami', href: '/projects' }}
       />
