@@ -167,7 +167,6 @@ const Home = () => {
     <main>
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-<<<<<<< HEAD
           <div className="text-center">
             <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl border border-brand-primary/15 bg-white p-2 shadow-md">
               <img
@@ -178,18 +177,6 @@ const Home = () => {
                 decoding="async"
               />
             </div>
-=======
-            <div className="text-center">
-              <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl border border-brand-primary/15 bg-white p-2 shadow-md">
-                <img
-                  src={santoLogo}
-                  alt={`${companyInfo.name} monogram`}
-                  className="h-full w-auto object-contain"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
->>>>>>> feature/logo-cta-contact-updates
             <p className="mt-6 text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">{companyInfo.name}</p>
             <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">{heroContent.headline}</h1>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-brand-secondary">{heroContent.subheadline}</p>
