@@ -22,6 +22,20 @@ export const companyInfo = {
   valueProposition: 'Meningkatkan efisiensi produksi dan menurunkan biaya melalui otomasi dan lini packaging terintegrasi.',
 }
 
+export const packagingSpecialist = {
+  title: 'Spesialis Mesin Packaging',
+  innovation: {
+    title: 'Inovasi',
+    description:
+      'PT. Santo Indonesia terus berkembang lebih dari sekadar produsen mesin dan lini otomatis, kini juga menjadi integrator sistem robotik.',
+  },
+  solution: {
+    title: 'Solusi',
+    description:
+      'PT. Santo Indonesia secara berkelanjutan menciptakan ide-ide baru dan menginovasi konsep-konsep baru dalam teknologi packaging untuk solusi produksi.',
+  },
+}
+
 export const heroContent = {
   headline: 'Innovation Packaging System',
   subheadline:

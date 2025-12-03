@@ -1,6 +1,6 @@
 import AboutSection from '../components/AboutSection'
 import CtaBanner from '../components/CtaBanner'
-import { businessLines, companyInfo } from '../data/siteContent'
+import { businessLines, companyInfo, packagingSpecialist } from '../data/siteContent'
 
 const About = () => (
   <main>
@@ -16,6 +16,31 @@ const About = () => (
       </div>
     </section>
     <AboutSection />
+    <section className="bg-brand-background py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 border-b-2 border-brand-primary pb-4">
+          <h2 className="text-2xl font-bold uppercase text-brand-primary">{packagingSpecialist.title}</h2>
+        </div>
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="space-y-4">
+            <div className="mb-4 border-b border-brand-accent/40 pb-4">
+              <h3 className="text-xl font-semibold text-brand-primary">{packagingSpecialist.innovation.title}</h3>
+            </div>
+            <p className="text-base leading-7 text-brand-secondary">
+              {packagingSpecialist.innovation.description}
+            </p>
+          </div>
+          <div className="space-y-4">
+            <div className="mb-4 border-b border-brand-accent/40 pb-4">
+              <h3 className="text-xl font-semibold text-brand-primary">{packagingSpecialist.solution.title}</h3>
+            </div>
+            <p className="text-base leading-7 text-brand-secondary">
+              {packagingSpecialist.solution.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section className="bg-white py-12">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
         {[

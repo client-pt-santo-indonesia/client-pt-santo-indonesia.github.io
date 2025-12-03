@@ -41,3 +41,5 @@ This repository contains a React + Vite + Tailwind company profile site for Lemb
 
 By contributing, you agree to uphold these standards so future agents and humans can collaborate safely and efficiently.
 
+
+
