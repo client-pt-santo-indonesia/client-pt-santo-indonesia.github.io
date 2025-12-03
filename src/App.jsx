@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
 import Products from './pages/Products'
+import FloatingWhatsapp from './components/FloatingWhatsapp'
 
 const App = () => {
   const location = useLocation()
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <FloatingWhatsapp />
       <Footer />
     </div>
   )

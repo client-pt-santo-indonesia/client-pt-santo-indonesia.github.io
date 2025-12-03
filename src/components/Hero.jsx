@@ -9,10 +9,7 @@ const Hero = () => (
         <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">{heroContent.headline}</h1>
         <p className="mt-5 text-lg leading-7 text-brand-accent">{heroContent.subheadline}</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-          <Link
-            to="/projects"
-            className="rounded-full bg-brand-highlight px-6 py-3 text-base font-semibold text-brand-primary"
-          >
+          <Link to="/projects" className="rounded-full bg-brand-highlight px-6 py-3 text-base font-semibold text-white">
             {heroContent.primaryCta}
           </Link>
           <Link

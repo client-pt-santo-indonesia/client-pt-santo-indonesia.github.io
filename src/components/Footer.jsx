@@ -38,7 +38,17 @@ const Footer = () => (
       </div>
       <div>
         <p className="text-sm font-semibold text-white uppercase tracking-wide">Ikuti Kami</p>
-        <p className="mt-3 text-sm">LinkedIn · Instagram · YouTube</p>
+        <a
+          href="https://www.facebook.com/ptsantoindonesia"
+          target="_blank"
+          rel="noreferrer"
+          className="mt-3 inline-flex items-center text-sm text-brand-accent hover:text-white"
+        >
+          Facebook
+          <span aria-hidden="true" className="ml-2 text-xs">
+            ↗
+          </span>
+        </a>
       </div>
     </div>
     <div className="border-t border-white/10">
