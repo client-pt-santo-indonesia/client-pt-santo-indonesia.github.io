@@ -3,7 +3,7 @@
 All AI or automation agents working in this repository **must** follow this checklist at the start of every task and whenever context changes.
 
 ## 1. Required Reading Order
-1. `AI_CODE_OF_CONDUCT.md` – authoritative behavioral, coding, and delivery rules.
+1. `CODE_OF_CONDUCT.md` – authoritative behavioral, coding, and delivery rules.
 2. `README.md` – project overview, scripts, structure, branding, and deployment notes.
 3. Task-specific files mentioned by the user or discovered during exploration.
 
@@ -22,4 +22,6 @@ Re-read these documents any time the repository updates or when tasks span multi
 - When missing information blocks progress, ask concise clarifying questions.
 
 By proceeding, you affirm that you have read and will adhere to this document and the referenced materials.
+
+
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { businessLines, companyInfo, companyValues } from '../data/siteContent'
 
 const AboutSection = ({ compact = false }) => (
@@ -19,10 +20,24 @@ const AboutSection = ({ compact = false }) => (
             <p className="text-3xl font-semibold">{companyInfo.history.ptEstablished}</p>
             <p className="text-xs uppercase tracking-wide text-brand-secondary/70">PT dibentuk</p>
           </div>
-          <div>
+          <Link to="/products" className="group transition hover:opacity-80">
             <p className="text-3xl font-semibold">{businessLines.length}</p>
-            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Lini solusi</p>
-          </div>
+            <p className="text-xs uppercase tracking-wide text-brand-secondary/70 flex items-center justify-center gap-1">
+              Lini solusi
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-3 w-3 transition-transform group-hover:translate-x-0.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </p>
+          </Link>
         </div>
       </div>
       <div className="space-y-6">

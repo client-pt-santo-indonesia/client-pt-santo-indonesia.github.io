@@ -19,7 +19,21 @@ export const companyInfo = {
     'Kami menangani perencanaan, pengembangan, dan manufaktur mesin packaging lengkap mulai dari robotic handling hingga panel elektrik dan pneumatik.',
   marketPosition:
     'Provider robotik, mesin packaging, sistem automasi, dan solusi proses produksi untuk food & beverage, kosmetik, farmasi, serta industri lainnya.',
-  valueProposition: 'Meningkatkan efisiensi produksi dan menurunkan biaya melalui otomasi dan lini packaging terintegrasi.',
+  valueProposition: 'Dari konsep hingga operasional, kami menjadi mitra engineering yang menghadirkan solusi packaging dan robotik yang tepat sasaran untuk produksi Anda.',
+}
+
+export const packagingSpecialist = {
+  title: 'Spesialis Mesin Packaging',
+  innovation: {
+    title: 'Inovasi',
+    description:
+      'PT. Santo Indonesia terus berkembang lebih dari sekadar produsen mesin dan lini otomatis, kini juga menjadi integrator sistem robotik.',
+  },
+  solution: {
+    title: 'Solusi',
+    description:
+      'PT. Santo Indonesia secara berkelanjutan menciptakan ide-ide baru dan menginovasi konsep-konsep baru dalam teknologi packaging untuk solusi produksi.',
+  },
 }
 
 export const heroContent = {
@@ -64,18 +78,51 @@ export const services = [
 ]
 
 export const businessLines = [
-  { title: 'Robotic System', description: 'Integrasi robot pick & place, delta, hingga palletizer untuk lini packaging.' },
-  { title: 'Bottle Packaging System', description: 'Mesin rinsing, filling, dan capping otomatis untuk botol berbagai ukuran.' },
-  { title: 'Cup Packaging System', description: 'Feeding, filling, sealing, dan trimming untuk produk dairy dan dessert.' },
+  {
+    title: 'Robotic System',
+    description: 'Integrasi robot pick & place, delta, hingga palletizer untuk lini packaging.',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Bottle Packaging System',
+    description: 'Mesin rinsing, filling, dan capping otomatis untuk botol berbagai ukuran.',
+    image: 'https://images.unsplash.com/photo-1581091215367-59ab6fe8399e?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Cup Packaging System',
+    description: 'Feeding, filling, sealing, dan trimming untuk produk dairy dan dessert.',
+    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&h=600&q=80',
+  },
   {
     title: 'Bag & Pouch Packaging System',
     description: 'Auger filling, sealing, hingga pre-made pouch handling untuk powder maupun liquid.',
+    image: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&h=600&q=80',
   },
-  { title: 'Labeling System', description: 'Wrap-around dan aplikasi label otomatis untuk botol serta kemasan kotak.' },
-  { title: 'Product Handling System', description: 'Pick & place, transfer, dan orientasi produk sebelum masuk packaging.' },
-  { title: 'Production Process Automation', description: 'Otomasi proses dengan PLC/SCADA untuk menjaga konsistensi produksi.' },
-  { title: 'Conveyor System', description: 'Belt, roller, wire-mesh, dan TTC conveyor sesuai kebutuhan lini.' },
-  { title: 'Electric & Pneumatic Panel', description: 'Panel kontrol elektrik dan pneumatic untuk mendukung seluruh lini.' },
+  {
+    title: 'Labeling System',
+    description: 'Wrap-around dan aplikasi label otomatis untuk botol serta kemasan kotak.',
+    image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Product Handling System',
+    description: 'Pick & place, transfer, dan orientasi produk sebelum masuk packaging.',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Production Process Automation',
+    description: 'Otomasi proses dengan PLC/SCADA untuk menjaga konsistensi produksi.',
+    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Conveyor System',
+    description: 'Belt, roller, wire-mesh, dan TTC conveyor sesuai kebutuhan lini.',
+    image: 'https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Electric & Pneumatic Panel',
+    description: 'Panel kontrol elektrik dan pneumatic untuk mendukung seluruh lini.',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=600&q=80',
+  },
 ]
 
 export const machineryExamples = [
@@ -214,16 +261,16 @@ export const projects = [
 
 export const companyValues = [
   {
-    title: 'Precision Packaging Engineering',
-    description: 'Setiap mesin dirancang untuk kebutuhan spesifik industri food, cosmetic, dan pharma.',
+    title: 'Custom Engineering Excellence',
+    description: 'Setiap mesin dan sistem dirancang khusus sesuai kebutuhan produksi Anda, bukan solusi off-the-shelf yang dipaksakan.',
   },
   {
-    title: 'Turnkey Integration Partner',
-    description: 'Kami menangani keseluruhan siklus: desain, manufaktur, instalasi, hingga pelatihan operator.',
+    title: 'Seamless Integration',
+    description: 'Kami memastikan robotic systems, packaging lines, dan panel kontrol terintegrasi sempurna dengan lini produksi yang ada.',
   },
   {
-    title: 'Efficiency & Cost Focus',
-    description: 'Solusi difokuskan pada peningkatan efisiensi dan penurunan biaya produksi sesuai value proposition.',
+    title: 'Long-Term Partnership',
+    description: 'Lebih dari sekadar vendor, kami menjadi mitra strategis yang mendukung pertumbuhan dan efisiensi produksi Anda.',
   },
 ]
 
