@@ -19,7 +19,7 @@ export const companyInfo = {
     'Kami menangani perencanaan, pengembangan, dan manufaktur mesin packaging lengkap mulai dari robotic handling hingga panel elektrik dan pneumatik.',
   marketPosition:
     'Provider robotik, mesin packaging, sistem automasi, dan solusi proses produksi untuk food & beverage, kosmetik, farmasi, serta industri lainnya.',
-  valueProposition: 'Meningkatkan efisiensi produksi dan menurunkan biaya melalui otomasi dan lini packaging terintegrasi.',
+  valueProposition: 'Dari konsep hingga operasional, kami menjadi mitra engineering yang menghadirkan solusi packaging dan robotik yang tepat sasaran untuk produksi Anda.',
 }
 
 export const packagingSpecialist = {
@@ -116,12 +116,12 @@ export const businessLines = [
   {
     title: 'Conveyor System',
     description: 'Belt, roller, wire-mesh, dan TTC conveyor sesuai kebutuhan lini.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600&q=80',
+    image: 'https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=800&h=600&q=80',
   },
   {
     title: 'Electric & Pneumatic Panel',
     description: 'Panel kontrol elektrik dan pneumatic untuk mendukung seluruh lini.',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=600&q=80',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=600&q=80',
   },
 ]
 
@@ -261,16 +261,16 @@ export const projects = [
 
 export const companyValues = [
   {
-    title: 'Precision Packaging Engineering',
-    description: 'Setiap mesin dirancang untuk kebutuhan spesifik industri food, cosmetic, dan pharma.',
+    title: 'Custom Engineering Excellence',
+    description: 'Setiap mesin dan sistem dirancang khusus sesuai kebutuhan produksi Anda, bukan solusi off-the-shelf yang dipaksakan.',
   },
   {
-    title: 'Turnkey Integration Partner',
-    description: 'Kami menangani keseluruhan siklus: desain, manufaktur, instalasi, hingga pelatihan operator.',
+    title: 'Seamless Integration',
+    description: 'Kami memastikan robotic systems, packaging lines, dan panel kontrol terintegrasi sempurna dengan lini produksi yang ada.',
   },
   {
-    title: 'Efficiency & Cost Focus',
-    description: 'Solusi difokuskan pada peningkatan efisiensi dan penurunan biaya produksi sesuai value proposition.',
+    title: 'Long-Term Partnership',
+    description: 'Lebih dari sekadar vendor, kami menjadi mitra strategis yang mendukung pertumbuhan dan efisiensi produksi Anda.',
   },
 ]
 
