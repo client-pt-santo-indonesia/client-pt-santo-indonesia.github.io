@@ -78,18 +78,51 @@ export const services = [
 ]
 
 export const businessLines = [
-  { title: 'Robotic System', description: 'Integrasi robot pick & place, delta, hingga palletizer untuk lini packaging.' },
-  { title: 'Bottle Packaging System', description: 'Mesin rinsing, filling, dan capping otomatis untuk botol berbagai ukuran.' },
-  { title: 'Cup Packaging System', description: 'Feeding, filling, sealing, dan trimming untuk produk dairy dan dessert.' },
+  {
+    title: 'Robotic System',
+    description: 'Integrasi robot pick & place, delta, hingga palletizer untuk lini packaging.',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Bottle Packaging System',
+    description: 'Mesin rinsing, filling, dan capping otomatis untuk botol berbagai ukuran.',
+    image: 'https://images.unsplash.com/photo-1581091215367-59ab6fe8399e?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Cup Packaging System',
+    description: 'Feeding, filling, sealing, dan trimming untuk produk dairy dan dessert.',
+    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&h=600&q=80',
+  },
   {
     title: 'Bag & Pouch Packaging System',
     description: 'Auger filling, sealing, hingga pre-made pouch handling untuk powder maupun liquid.',
+    image: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&h=600&q=80',
   },
-  { title: 'Labeling System', description: 'Wrap-around dan aplikasi label otomatis untuk botol serta kemasan kotak.' },
-  { title: 'Product Handling System', description: 'Pick & place, transfer, dan orientasi produk sebelum masuk packaging.' },
-  { title: 'Production Process Automation', description: 'Otomasi proses dengan PLC/SCADA untuk menjaga konsistensi produksi.' },
-  { title: 'Conveyor System', description: 'Belt, roller, wire-mesh, dan TTC conveyor sesuai kebutuhan lini.' },
-  { title: 'Electric & Pneumatic Panel', description: 'Panel kontrol elektrik dan pneumatic untuk mendukung seluruh lini.' },
+  {
+    title: 'Labeling System',
+    description: 'Wrap-around dan aplikasi label otomatis untuk botol serta kemasan kotak.',
+    image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Product Handling System',
+    description: 'Pick & place, transfer, dan orientasi produk sebelum masuk packaging.',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Production Process Automation',
+    description: 'Otomasi proses dengan PLC/SCADA untuk menjaga konsistensi produksi.',
+    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Conveyor System',
+    description: 'Belt, roller, wire-mesh, dan TTC conveyor sesuai kebutuhan lini.',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600&q=80',
+  },
+  {
+    title: 'Electric & Pneumatic Panel',
+    description: 'Panel kontrol elektrik dan pneumatic untuk mendukung seluruh lini.',
+    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=600&q=80',
+  },
 ]
 
 export const machineryExamples = [

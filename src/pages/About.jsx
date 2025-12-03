@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import AboutSection from '../components/AboutSection'
 import CtaBanner from '../components/CtaBanner'
 import { businessLines, companyInfo, packagingSpecialist } from '../data/siteContent'
@@ -38,6 +39,48 @@ const About = () => (
               {packagingSpecialist.solution.description}
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section className="bg-white py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 border-b-2 border-brand-primary pb-4">
+          <h2 className="text-2xl font-bold uppercase text-brand-primary">9 Lini Solusi</h2>
+          <p className="mt-2 text-base leading-7 text-brand-secondary">
+            Kami menyediakan solusi lengkap untuk kebutuhan packaging dan robotik, dari robotic system hingga panel kontrol.
+          </p>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {businessLines.map((line) => (
+            <article
+              key={line.title}
+              className="flex flex-col overflow-hidden rounded-3xl border border-brand-accent/40 bg-brand-background/50 shadow-sm transition hover:-translate-y-1 hover:border-brand-primary/60 hover:shadow-md"
+            >
+              {line.image && (
+                <div className="relative h-48 w-full overflow-hidden">
+                  <img
+                    src={line.image}
+                    alt={line.title}
+                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div className="flex flex-col p-6">
+                <h3 className="text-xl font-semibold text-brand-primary">{line.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-brand-secondary">{line.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div className="mt-8 text-center">
+          <Link
+            to="/products"
+            className="inline-flex items-center rounded-full border border-brand-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand-primary transition hover:bg-brand-primary hover:text-white"
+          >
+            Lihat Detail Lengkap
+            <span className="ml-2 inline-block transition">&rarr;</span>
+          </Link>
         </div>
       </div>
     </section>
