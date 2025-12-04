@@ -5,7 +5,7 @@ Website statis berbasis React + Vite + Tailwind CSS untuk menampilkan company pr
 ## Requirement
 
 - Node.js 20+
-- npm 10+
+- npm 10+.
 
 ## Instalasi
 
