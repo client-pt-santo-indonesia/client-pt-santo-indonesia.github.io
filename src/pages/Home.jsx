@@ -1,35 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
-import { companyInfo, heroContent } from '../data/siteContent'
+import { companyInfo, heroContent, services, eventsAndPartners, productDetails } from '../data/siteContent'
 import santoLogo from '@assets/LOGO SANTO INDONESIA (kecil).jpg'
 
-const carouselSlides = [
-  {
-    id: 'robotic-cup',
-    title: 'Pick & Place Cup Packaging',
-    description: 'Delta robot menata cup sebelum filling & sealing untuk menjaga higienitas dessert dan dairy.',
-    location: 'Sidoarjo',
-    image:
-      'https://images.unsplash.com/photo-1581091215367-59ab6fe8399e?auto=format&fit=crop&w=1400&q=80',
-  },
-  {
-    id: 'bottle-line',
-    title: 'Bottle Rinsing, Filling & Capping',
-    description: 'Lini 3-in-1 untuk brand minuman nasional dengan persyaratan sanitasi ketat.',
-    location: 'Bekasi',
-    image:
-      'https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=1400&q=80',
-  },
-  {
-    id: 'pouch-system',
-    title: 'Pouch & Bag Automation',
-    description: 'Auger filling serta sealing otomatis untuk powder dan liquid bernilai tinggi.',
-    location: 'Solo',
-    image:
-      'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1400&q=80',
-  },
-]
+const carouselSlides = productDetails.map((product) => ({
+  id: product.slug,
+  title: `${product.name} — ${product.subtitle}`,
+  description: product.summary,
+  location: product.badges.join(' · '),
+  image: product.gallery?.[0],
+}))
 
 const navigationCards = [
   {
@@ -143,8 +124,18 @@ const navigationCards = [
   },
 ]
 
+const heroPanVariants = ['hero-pan-top-left', 'hero-pan-top-right', 'hero-pan-bottom-left', 'hero-pan-bottom-right']
+
+const showServicesSection = false
+const showEventsSection = false
+
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0)
+  const heroPanClasses = useMemo(
+    () => carouselSlides.map(() => heroPanVariants[Math.floor(Math.random() * heroPanVariants.length)]),
+    []
+  )
+  const heroPanDurations = useMemo(() => carouselSlides.map(() => `${14 + Math.random() * 6}s`), [])
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -178,6 +169,7 @@ const Home = () => {
               />
             </div>
             <p className="mt-6 text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">{companyInfo.name}</p>
+            <p className="mt-2 text-xs font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">{companyInfo.tagline}</p>
             <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">{heroContent.headline}</h1>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-brand-secondary">{heroContent.subheadline}</p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -200,10 +192,13 @@ const Home = () => {
               {carouselSlides.map((slide, index) => (
                 <figure
                   key={slide.id}
-                  className={`absolute inset-0 flex flex-col justify-end bg-cover bg-center p-10 text-white transition-opacity duration-700 ${
+                  className={`hero-pan ${heroPanClasses[index]} absolute inset-0 flex flex-col justify-end bg-cover bg-center p-10 text-white transition-opacity duration-700 ${
                     index === activeSlide ? 'opacity-100' : 'pointer-events-none opacity-0'
                   }`}
-                  style={{ backgroundImage: `linear-gradient(135deg, rgba(12,23,64,0.75), rgba(12,23,64,0.3)), url(${slide.image})` }}
+                  style={{
+                    backgroundImage: `linear-gradient(135deg, rgba(12,23,64,0.75), rgba(12,23,64,0.3)), url("${slide.image}")`,
+                    '--pan-duration': heroPanDurations[index],
+                  }}
                 >
                   <p className="text-xs uppercase tracking-[0.4em] text-white/70">{slide.location}</p>
                   <figcaption className="mt-4">
@@ -267,10 +262,94 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {showServicesSection && (
+        <section className="bg-brand-background py-16">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">Services & Speciality</p>
+            <div className="mt-4 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.4em] text-brand-secondary/60">
+              <span>{companyInfo.slogan}</span>
+              <span className="hidden h-px w-16 bg-brand-secondary/30 sm:block" aria-hidden="true" />
+              <span className="tracking-[0.3em]">Packaging Machinery Specialist</span>
+            </div>
+            <h2 className="mt-5 text-3xl font-semibold text-brand-primary sm:text-4xl">
+              Delapan lini bisnis untuk kebutuhan packaging dan otomasi
+            </h2>
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {services.map((item) => (
+                <article key={item.title} className="rounded-3xl border border-brand-accent/30 bg-white/80 p-6 shadow-sm">
+                  <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-brand-highlight">
+                    <span>{item.icon}</span>
+                    <span>Speciality</span>
+                  </div>
+                  <h3 className="mt-3 text-xl font-semibold text-brand-primary">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-brand-secondary">{item.description}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {item.examples.map((example) => (
+                      <span
+                        key={example}
+                        className="rounded-full border border-brand-highlight/30 px-3 py-1 text-xs font-semibold text-brand-highlight"
+                      >
+                        {example}
+                      </span>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      {showEventsSection && (
+        <section className="bg-white py-16">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="grid gap-10 lg:grid-cols-2">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">Events</p>
+                <h2 className="mt-3 text-3xl font-semibold text-brand-primary">Industry presence</h2>
+                <p className="mt-3 text-sm leading-7 text-brand-secondary">
+                  Kami mengikuti acara industri untuk menunjukkan inovasi terbaru serta menangkap kebutuhan pasar.
+                </p>
+                <div className="mt-6 space-y-4">
+                  {eventsAndPartners.events.map((event) => (
+                    <article key={event.name} className="rounded-3xl border border-brand-accent/40 bg-brand-background p-5 shadow-inner">
+                      <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">{event.cadence}</p>
+                      <h3 className="mt-2 text-lg font-semibold text-brand-primary">{event.name}</h3>
+                      <p className="mt-2 text-sm leading-6 text-brand-secondary">{event.description}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="rounded-3xl border border-brand-accent/40 bg-brand-background/80 p-6 shadow-inner">
+                  <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">Business Partner</p>
+                  {eventsAndPartners.partners.map((partner) => (
+                    <div key={partner.name} className="mt-4">
+                      <h3 className="text-lg font-semibold text-brand-primary">{partner.name}</h3>
+                      <p className="text-xs uppercase tracking-[0.4em] text-brand-secondary/60">{partner.role}</p>
+                      <p className="mt-2 text-sm leading-6 text-brand-secondary">{partner.description}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="rounded-3xl border border-brand-accent/40 bg-white p-6 shadow-lg">
+                  <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/60">Kontak Global</p>
+                  <h3 className="mt-2 text-xl font-semibold text-brand-primary">{companyInfo.tagline}</h3>
+                  <p className="mt-3 text-sm leading-7 text-brand-secondary">{companyInfo.address}</p>
+                  <ul className="mt-4 space-y-1 text-sm text-brand-secondary">
+                    <li>Tel: {companyInfo.phone}</li>
+                    <li>Alt: {companyInfo.phoneAlt}</li>
+                    <li>Email: {companyInfo.email}</li>
+                    <li>Web: {companyInfo.website}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       <CtaBanner
-        eyebrow="Perlu masukan untuk lini packaging?"
-        title="Tim ahli kami siap membantu menganalisis dan merancang solusi untuk kebutuhan bottle, cup, pouch, maupun robotic handling Anda."
-        description="Kami siapkan scope kerja lengkap dengan opsi mesin yang sesuai spesifikasi produk dan roadmap implementasi."
+        eyebrow="Siap memperbarui lini packaging?"
+        title="Tim kami membantu memetakan kebutuhan bottle, cup, pouch, bag, dan robotik sesuai target kapasitas Anda."
+        description="Sampaikan spesifikasi produk, standar higienitas, serta target throughput untuk kami terjemahkan menjadi konfigurasi mesin."
         primary={{ label: 'Diskusikan Project', href: '/contact' }}
         secondary={{ label: 'Lihat Project Kami', href: '/projects' }}
       />

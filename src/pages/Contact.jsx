@@ -25,7 +25,13 @@ const Contact = () => (
                 <span className="font-semibold text-brand-primary">Telepon:</span> {contactInfo.phone}
               </li>
               <li>
+                <span className="font-semibold text-brand-primary">Telepon Alternatif:</span> {contactInfo.phoneAlt}
+              </li>
+              <li>
                 <span className="font-semibold text-brand-primary">Email:</span> {contactInfo.email}
+              </li>
+              <li>
+                <span className="font-semibold text-brand-primary">Website:</span> {contactInfo.website}
               </li>
               <li>
                 <a href={contactInfo.whatsapp} target="_blank" rel="noreferrer" className="font-semibold text-brand-highlight">

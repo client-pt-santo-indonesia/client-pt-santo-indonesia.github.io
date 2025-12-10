@@ -7,7 +7,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
-import Products from './pages/Products'
+import Solutions from './pages/Solutions'
 import FloatingWhatsapp from './components/FloatingWhatsapp'
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Solutions />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
