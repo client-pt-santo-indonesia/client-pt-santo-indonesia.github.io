@@ -46,7 +46,11 @@ const CtaBanner = ({ eyebrow, title, description, primary, secondary, tone = 'li
     <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 text-center sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:text-left">
       <div>
         {eyebrow && (
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-secondary/80 lg:text-brand-secondary/70">
+          <p
+            className={`text-xs font-semibold uppercase tracking-[0.4em] ${
+              tone === 'dark' ? 'text-white/70' : 'text-brand-secondary/80'
+            }`}
+          >
             {eyebrow}
           </p>
         )}
