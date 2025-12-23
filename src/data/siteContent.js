@@ -6,12 +6,12 @@ import themisCatalogFront from '@assets/img/3 Themis Catalogue - Front side 2023
 import themis4mFront from '@assets/img/4 Themis 4M Catalogue - front side.jpg'
 import titanCatalogFront from '@assets/img/5 TITAN Catalogue - front side 2023.jpg'
 import vortexCatalogFront from '@assets/img/6 vortex Catalogue - front side.jpg'
-import santoCarousel49 from '@assets/compro/santo-company-profile-2024-r1-49.png'
-import santoCarousel50 from '@assets/compro/santo-company-profile-2024-r1-50.png'
-import santoCarousel51 from '@assets/compro/santo-company-profile-2024-r1-51.png'
-import santoCarousel52 from '@assets/compro/santo-company-profile-2024-r1-52.png'
-import santoCarousel53 from '@assets/compro/santo-company-profile-2024-r1-53.png'
-import santoCarousel54 from '@assets/compro/santo-company-profile-2024-r1-54.png'
+import santoCarousel43 from '@assets/compro/santo-company-profile-2024-r1-43.png'
+import santoCarousel44 from '@assets/compro/santo-company-profile-2024-r1-44.png'
+import santoCarousel45 from '@assets/compro/santo-company-profile-2024-r1-45.png'
+import santoCarousel46 from '@assets/compro/santo-company-profile-2024-r1-46.png'
+import santoCarousel47 from '@assets/compro/santo-company-profile-2024-r1-47.png'
+import santoCarousel48 from '@assets/compro/santo-company-profile-2024-r1-48.png'
 import santoHero40 from '@assets/compro/santo-company-profile-2024-r1-40.png'
 import santoHero41 from '@assets/compro/santo-company-profile-2024-r1-41.png'
 import santoHero42 from '@assets/compro/santo-company-profile-2024-r1-42.png'
@@ -21,7 +21,7 @@ import logoAquaDanone from '@assets/logo/Tirta Investama - AQUA Danone.png'
 
 export const companyInfo = {
   name: 'PT. Santo Indonesia',
-  tagline: 'INNOVATIONS PACKAGING SYSTEM',
+  tagline: 'Where Manufacturing Meets Perfection',
   slogan: 'PACKAGING MACHINERY SPECIALIST',
   description:
     'PT. Santo Indonesia is a packaging machinery specialist that has grown into a robotic systems integrator. We deliver turnkey solutions from bottle, cup, and pouch lines to electrical panels and supporting construction.',
@@ -75,7 +75,7 @@ export const aboutCarousel = [
     title: 'ALLPACK 2024 - Booth Overview',
     description:
       'Opening moments at the Santo Indonesia booth at ALLPACK Jakarta 2024 showcased the team, guests, and key exhibits.',
-    image: santoCarousel49,
+    image: santoCarousel43,
     alt: 'Santo Indonesia booth at ALLPACK Jakarta 2024',
   },
   {
@@ -83,7 +83,7 @@ export const aboutCarousel = [
     title: 'Robotics & Packaging Demo',
     description:
       'A demo area highlighting robotic integration with the packaging line as visitors engage with engineer briefings.',
-    image: santoCarousel50,
+    image: santoCarousel44,
     alt: 'Visitors watching a robotics packaging demo at the event',
   },
   {
@@ -91,7 +91,7 @@ export const aboutCarousel = [
     title: 'Monoblock System Presentation',
     description:
       'Technical consultants explain the monoblock module to prospective clients, highlighting mechanical details.',
-    image: santoCarousel51,
+    image: santoCarousel45,
     alt: 'Engineer presenting a monoblock module during the event',
   },
   {
@@ -99,7 +99,7 @@ export const aboutCarousel = [
     title: 'Panel & Pneumatic Workshop',
     description:
       'The team showcases control panels and pneumatic cabinets during the Q&A session with visitors.',
-    image: santoCarousel52,
+    image: santoCarousel46,
     alt: 'Discussion about electrical panels at the booth',
   },
   {
@@ -107,7 +107,7 @@ export const aboutCarousel = [
     title: 'Cup Filling Line Demo',
     description:
       'A cup filling demo as the team explains the process stages to the food and beverage audience.',
-    image: santoCarousel53,
+    image: santoCarousel47,
     alt: 'Cup filling demo at an industry exhibition',
   },
   {
@@ -115,7 +115,7 @@ export const aboutCarousel = [
     title: 'Partner Visits & Networking',
     description:
       'Networking with partners and prospective clients discussing turnkey projects at the booth.',
-    image: santoCarousel54,
+    image: santoCarousel48,
     alt: 'Meeting with partners at the exhibition booth',
   },
 ]

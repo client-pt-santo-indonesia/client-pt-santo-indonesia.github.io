@@ -7,3 +7,6 @@
 - [x] Translate copy to English and keep branding/product terms intact.
 - [x] Spot-check remaining UI text for consistency and update if needed.
 - [x] Run `npm run lint` and report results.
+- [x] Update About Us tagline to the new brand tagline.
+- [x] Refresh About Us carousel images with the latest assets.
+- [x] Run `npm run lint` after About Us updates.

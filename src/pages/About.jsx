@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import AboutSection from '../components/AboutSection'
 import CtaBanner from '../components/CtaBanner'
-import { aboutCarousel, companyInfo, packagingSpecialist, eventsAndPartners } from '../data/siteContent'
+import { aboutCarousel, companyInfo, eventsAndPartners, heroContent, packagingSpecialist } from '../data/siteContent'
 
 const AUTO_SLIDE_INTERVAL = 6000
 
@@ -27,7 +27,7 @@ const About = () => {
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-sm uppercase tracking-[0.4em] text-brand-secondary">{companyInfo.name}</p>
           <p className="mt-2 text-xs uppercase tracking-[0.4em] text-brand-secondary/70">{companyInfo.tagline}</p>
-          <h1 className="mt-4 text-4xl font-semibold text-brand-primary">Integrator Packaging & Robotic Systems</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-brand-primary">{heroContent.headline}</h1>
           <p className="mt-4 text-base leading-7 text-brand-secondary">
             Starting from a workshop in {companyInfo.history.workshopFounded} and incorporated in{' '}
             {companyInfo.history.ptEstablished}, we continue to deliver packaging machines and lines for food & beverage,
