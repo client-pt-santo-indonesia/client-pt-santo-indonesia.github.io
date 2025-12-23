@@ -15,16 +15,22 @@ const navigationCards = [
       <svg
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-8 w-8 stroke-current"
-        fill="none"
-        strokeWidth={1.6}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        className="h-9 w-9"
       >
-        <circle cx="9" cy="9.5" r="2.8" />
-        <circle cx="16" cy="8.5" r="2.3" />
-        <path d="M3.5 19c0-3 3-5 5.5-5s5.5 2 5.5 5" />
-        <path d="M13.5 18.4c.8-1.6 2.5-2.6 4.1-2.6 1.9 0 3.4 1.3 3.4 3.1" />
+        <g fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <g opacity="0.35" transform="translate(1.2 1.2)">
+            <circle cx="9" cy="9.5" r="2.8" />
+            <circle cx="16" cy="8.5" r="2.3" />
+            <path d="M3.5 19c0-3 3-5 5.5-5s5.5 2 5.5 5" />
+            <path d="M13.5 18.4c.8-1.6 2.5-2.6 4.1-2.6 1.9 0 3.4 1.3 3.4 3.1" />
+          </g>
+          <g>
+            <circle cx="9" cy="9.5" r="2.8" />
+            <circle cx="16" cy="8.5" r="2.3" />
+            <path d="M3.5 19c0-3 3-5 5.5-5s5.5 2 5.5 5" />
+            <path d="M13.5 18.4c.8-1.6 2.5-2.6 4.1-2.6 1.9 0 3.4 1.3 3.4 3.1" />
+          </g>
+        </g>
       </svg>
     ),
   },
@@ -36,19 +42,28 @@ const navigationCards = [
       <svg
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-8 w-8 stroke-current"
-        fill="none"
-        strokeWidth={1.6}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        className="h-9 w-9"
       >
-        <circle cx="12" cy="12" r="3.2" />
-        <circle cx="12" cy="5" r="2" />
-        <circle cx="6.5" cy="16.5" r="2" />
-        <circle cx="17.5" cy="16.5" r="2" />
-        <path d="M12 9V7.2" />
-        <path d="M10.6 13.6l-2.9 1.7" />
-        <path d="M13.4 13.6l2.9 1.7" />
+        <g fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <g opacity="0.35" transform="translate(1.2 1.2)">
+            <circle cx="12" cy="12" r="3.2" />
+            <circle cx="12" cy="5" r="2" />
+            <circle cx="6.5" cy="16.5" r="2" />
+            <circle cx="17.5" cy="16.5" r="2" />
+            <path d="M12 9V7.2" />
+            <path d="M10.6 13.6l-2.9 1.7" />
+            <path d="M13.4 13.6l2.9 1.7" />
+          </g>
+          <g>
+            <circle cx="12" cy="12" r="3.2" />
+            <circle cx="12" cy="5" r="2" />
+            <circle cx="6.5" cy="16.5" r="2" />
+            <circle cx="17.5" cy="16.5" r="2" />
+            <path d="M12 9V7.2" />
+            <path d="M10.6 13.6l-2.9 1.7" />
+            <path d="M13.4 13.6l2.9 1.7" />
+          </g>
+        </g>
       </svg>
     ),
   },
@@ -60,19 +75,28 @@ const navigationCards = [
       <svg
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-8 w-8 stroke-current"
-        fill="none"
-        strokeWidth={1.6}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        className="h-9 w-9"
       >
-        <rect x="5.5" y="4.5" width="4.8" height="14.5" rx="0.9" />
-        <rect x="12.7" y="8" width="5.8" height="11" rx="0.9" />
-        <path d="M3.5 20h17" />
-        <path d="M7.5 8.5h0.01" />
-        <path d="M7.5 11.5h0.01" />
-        <path d="M15.5 11h2" />
-        <path d="M15.5 14h2" />
+        <g fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <g opacity="0.35" transform="translate(1.2 1.2)">
+            <rect x="5.5" y="4.5" width="4.8" height="14.5" rx="0.9" />
+            <rect x="12.7" y="8" width="5.8" height="11" rx="0.9" />
+            <path d="M3.5 20h17" />
+            <path d="M7.5 8.5h0.01" />
+            <path d="M7.5 11.5h0.01" />
+            <path d="M15.5 11h2" />
+            <path d="M15.5 14h2" />
+          </g>
+          <g>
+            <rect x="5.5" y="4.5" width="4.8" height="14.5" rx="0.9" />
+            <rect x="12.7" y="8" width="5.8" height="11" rx="0.9" />
+            <path d="M3.5 20h17" />
+            <path d="M7.5 8.5h0.01" />
+            <path d="M7.5 11.5h0.01" />
+            <path d="M15.5 11h2" />
+            <path d="M15.5 14h2" />
+          </g>
+        </g>
       </svg>
     ),
   },
@@ -84,16 +108,22 @@ const navigationCards = [
       <svg
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-8 w-8 stroke-current"
-        fill="none"
-        strokeWidth={1.6}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        className="h-9 w-9"
       >
-        <rect x="5" y="5" width="6" height="6" rx="1.2" />
-        <rect x="13" y="5" width="6" height="6" rx="1.2" />
-        <rect x="5" y="13" width="6" height="6" rx="1.2" />
-        <rect x="13" y="13" width="6" height="6" rx="1.2" />
+        <g fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <g opacity="0.35" transform="translate(1.2 1.2)">
+            <rect x="5" y="5" width="6" height="6" rx="1.2" />
+            <rect x="13" y="5" width="6" height="6" rx="1.2" />
+            <rect x="5" y="13" width="6" height="6" rx="1.2" />
+            <rect x="13" y="13" width="6" height="6" rx="1.2" />
+          </g>
+          <g>
+            <rect x="5" y="5" width="6" height="6" rx="1.2" />
+            <rect x="13" y="5" width="6" height="6" rx="1.2" />
+            <rect x="5" y="13" width="6" height="6" rx="1.2" />
+            <rect x="13" y="13" width="6" height="6" rx="1.2" />
+          </g>
+        </g>
       </svg>
     ),
   },
@@ -105,14 +135,18 @@ const navigationCards = [
       <svg
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-8 w-8 stroke-current"
-        fill="none"
-        strokeWidth={1.6}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        className="h-9 w-9"
       >
-        <rect x="3.5" y="6.5" width="17" height="11" rx="1.8" />
-        <path d="M3.5 7l8.5 6 8.5-6" />
+        <g fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+          <g opacity="0.35" transform="translate(1.2 1.2)">
+            <rect x="3.5" y="6.5" width="17" height="11" rx="1.8" />
+            <path d="M3.5 7l8.5 6 8.5-6" />
+          </g>
+          <g>
+            <rect x="3.5" y="6.5" width="17" height="11" rx="1.8" />
+            <path d="M3.5 7l8.5 6 8.5-6" />
+          </g>
+        </g>
       </svg>
     ),
   },
@@ -241,8 +275,12 @@ const Home = () => {
                   to={item.path}
                   className="group flex flex-col items-center rounded-3xl border border-brand-accent/40 bg-white px-5 py-6 text-center transition hover:-translate-y-1 hover:border-brand-highlight hover:shadow-lg"
                 >
-                  <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-background text-brand-primary shadow-inner">
-                    {item.icon}
+                  <span className="relative flex h-16 w-16 items-center justify-center">
+                    <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white via-brand-accent to-brand-highlight/40 shadow-[0_18px_26px_-18px_rgba(13,10,189,0.75)]" />
+                    <span className="absolute inset-1 rounded-2xl bg-white/80" />
+                    <span className="relative text-brand-primary">
+                      {item.icon}
+                    </span>
                   </span>
                   <p className="mt-4 text-lg font-semibold text-brand-primary">{item.title}</p>
                   <p className="text-sm text-brand-secondary/80">{item.subtitle}</p>
