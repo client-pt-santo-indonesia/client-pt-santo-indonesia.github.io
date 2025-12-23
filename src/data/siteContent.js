@@ -396,7 +396,6 @@ export const clients = [
 export const projects = [
   {
     name: 'CHRONOS 164 + POSEIDON 24 Line',
-    client: 'PT. Singa Mas Indonesia (Charoen Pokphand)',
     industry: 'Food & Beverage',
     location: 'Bekasi, Indonesia',
     description:
@@ -404,7 +403,6 @@ export const projects = [
   },
   {
     name: 'POSEIDON 4TS & 8TS Cup Line',
-    client: 'PT. Konimex',
     industry: 'Pharma & FMCG',
     location: 'Solo, Indonesia',
     description:
@@ -412,22 +410,19 @@ export const projects = [
   },
   {
     name: 'THEMIS XSI Sachet Automation',
-    client: 'PT. Konimex',
     industry: 'Pharma & FMCG',
     location: 'Solo, Indonesia',
     description: 'Automatic filling and sealing sachet machine for high-value powder with accuracy up to +/-0.5 g.',
   },
   {
     name: 'VENUS 8SV & AURORA 4SSC Integration',
-    client: 'PT. Irawan Djaja Agung',
     industry: 'Consumer Goods',
     location: 'Surabaya, Indonesia',
     description:
       'Bottle filling vacuum system paired with a rotary screw cap and Helios S labeler to maintain fill quality.',
   },
   {
-    name: 'Lion Wings Robotic Center',
-    client: 'Lion Wings',
+    name: 'Robotic Center Implementation',
     industry: 'FMCG',
     location: 'Jakarta, Indonesia',
     description:
@@ -435,7 +430,6 @@ export const projects = [
   },
   {
     name: 'Cup Filling Control Retrofit',
-    client: 'Tirta Investama / AQUA Danone',
     industry: 'Beverage',
     location: 'Indonesia',
     description:
@@ -443,14 +437,12 @@ export const projects = [
   },
   {
     name: 'THEMIS 10M Premium Cosmetics Line',
-    client: 'PT. Golden Leaves Jaya Abadi',
     industry: 'Cosmetics',
     location: 'Jakarta, Indonesia',
     description: 'Automated pouch filling and sealing for premium skincare products.',
   },
   {
     name: 'Bag & Pouch Upgrade',
-    client: 'PT. Mitra Legi Sampoerna',
     industry: 'Manufacturing',
     location: 'Indonesia',
     description:
@@ -458,7 +450,6 @@ export const projects = [
   },
   {
     name: 'Vision Camera System',
-    client: 'Ajinomoto',
     industry: 'Food Seasoning',
     location: 'Indonesia',
     description: 'Camera system for sachet quality inspection to ensure visual standards are met.',

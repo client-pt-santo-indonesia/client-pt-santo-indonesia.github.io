@@ -28,15 +28,17 @@ const Contact = () => (
                 <span className="font-semibold text-brand-primary">Alternate Phone:</span> {contactInfo.phoneAlt}
               </li>
               <li>
-                <span className="font-semibold text-brand-primary">Email:</span> {contactInfo.email}
+                <span className="font-semibold text-brand-primary">Email:</span>{' '}
+                <a
+                  href={`mailto:${contactInfo.email}`}
+                  className="inline-flex items-center gap-1 font-semibold text-brand-secondary"
+                >
+                  {contactInfo.email}
+                  <span aria-hidden="true">→</span>
+                </a>
               </li>
               <li>
                 <span className="font-semibold text-brand-primary">Website:</span> {contactInfo.website}
-              </li>
-              <li>
-                <a href={contactInfo.whatsapp} target="_blank" rel="noreferrer" className="font-semibold text-brand-highlight">
-                  WhatsApp us →
-                </a>
               </li>
             </ul>
           </div>
@@ -63,15 +65,9 @@ const Contact = () => (
                 href={contactInfo.whatsapp}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex flex-1 items-center justify-center rounded-full bg-brand-highlight px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+                className="inline-flex flex-1 items-center justify-center rounded-full bg-brand-primary px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-secondary"
               >
                 Chat on WhatsApp
-              </a>
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="inline-flex flex-1 items-center justify-center rounded-full border border-brand-primary/30 px-5 py-3 text-sm font-semibold text-brand-primary transition hover:bg-brand-primary hover:text-white"
-              >
-                Send Email
               </a>
             </div>
             <div className="mt-6 space-y-2 text-sm text-brand-secondary">

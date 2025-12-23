@@ -4,7 +4,7 @@ import { projects } from '../data/siteContent'
 
 const Projects = () => (
   <main>
-    <section className="bg-brand-secondary py-16 text-white">
+    <section className="bg-brand-primary/95 py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Project Portfolio</p>
         <h1 className="mt-4 text-4xl font-semibold">Packaging & Robotics Lines We Have Delivered</h1>

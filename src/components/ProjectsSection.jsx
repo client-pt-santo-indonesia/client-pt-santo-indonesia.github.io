@@ -56,11 +56,6 @@ const ProjectsSection = ({
               </div>
               <h3 className="mt-4 text-2xl font-semibold text-brand-primary">{project.name}</h3>
               <p className="mt-3 text-sm leading-6 text-brand-secondary">{project.description}</p>
-              {project.client && (
-                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-brand-secondary/70">
-                  Client: {project.client}
-                </p>
-              )}
               <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-wide text-brand-secondary/70">
                 <span>Timeline 4-12 weeks</span>
                 <span>ROI 12-24 months</span>

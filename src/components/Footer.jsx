@@ -31,9 +31,39 @@ const Footer = () => (
       <div>
         <p className="text-sm font-semibold text-white uppercase tracking-wide">Contact</p>
         <ul className="mt-3 space-y-2 text-sm">
-          <li>{contactInfo.address}</li>
-          <li>Tel: {contactInfo.phone}</li>
-          <li>Email: {contactInfo.email}</li>
+          <li>
+            <span className="font-semibold text-white">Grand Tambak Sawah</span>
+            <br />
+            <span>Blok B No.3, Jabon</span>
+            <br />
+            <span>Tambak Sawah, Waru</span>
+            <br />
+            <span>Sidoarjo, East Java (61256)</span>
+            <br />
+            <span>Indonesia</span>
+          </li>
+          <li>
+            <span className="font-semibold text-white">Tel:</span>{' '}
+            <a
+              href={contactInfo.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-brand-accent hover:text-white"
+            >
+              {contactInfo.phone}
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <span className="font-semibold text-white">Email:</span>{' '}
+            <a
+              href={`mailto:${contactInfo.email}`}
+              className="inline-flex items-center gap-1 text-brand-accent hover:text-white"
+            >
+              {contactInfo.email}
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div>

@@ -70,13 +70,15 @@ const Solutions = () => {
                   <h3 className="text-2xl font-semibold text-brand-primary">{product.name}</h3>
                   <p className="mt-2 text-xs uppercase tracking-[0.4em] text-brand-secondary/70">{product.subtitle}</p>
                   <p className="mt-4 text-sm leading-7 text-brand-secondary">{product.summary}</p>
-                  <Link
-                    to="/contact"
-                    className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-brand-highlight transition hover:gap-3"
+                  <a
+                    href={contactInfo.whatsapp}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-brand-primary transition hover:gap-3"
                   >
                     {solutionsContent.requestQuoteLabel}
                     <span className="inline-block">&rarr;</span>
-                  </Link>
+                  </a>
                 </div>
               </article>
             ))}
