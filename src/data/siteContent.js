@@ -55,6 +55,30 @@ export const companyInfo = {
   },
 }
 
+export const solutionsContent = {
+  heroEyebrow: 'Robotic Solutions',
+  heroTitle: 'Robotic Systems & Packaging Line Integration',
+  heroDescription:
+    'PT. Santo Indonesia designs robotic packaging systems that connect bottle, cup, pouch, and end-of-line workflows into a single synchronized line. Our engineering teams deliver robot cells, controls, and mechanical platforms for turnkey production.',
+  productEyebrow: 'Robotic Platforms',
+  productTitle: 'Featured machines built for robotic integration',
+  productDescription:
+    'These platforms anchor our robotic packaging cells, supported by vision guidance, conveyors, and control panels to keep output stable.',
+  requestQuoteLabel: 'Request a Quote',
+  machinesCtaLabel: 'Ask about other machines on WhatsApp',
+  machinesCtaDescription: 'Need a different configuration? Our team can recommend the right robot cell and machine setup.',
+  supportEyebrow: 'Integration Support',
+  supportTitle: 'Robotic cell components and line utilities',
+  supportDescription:
+    'From palletizers and conveyors to electrical panels, we supply the supporting systems needed to complete robotic line integration.',
+  ctaEyebrow: 'Need a custom configuration?',
+  ctaTitle: 'Discuss the robotic cell configuration and machine specs that best fit your line.',
+  ctaDescription:
+    'We help determine the combination of robots, machines, panels, and conveyors that support your target throughput and hygiene standards.',
+  ctaPrimaryLabel: 'Schedule a Demo',
+  ctaSecondaryLabel: 'View Projects',
+}
+
 export const packagingSpecialist = {
   title: 'Packaging Machinery Specialist',
   innovation: {

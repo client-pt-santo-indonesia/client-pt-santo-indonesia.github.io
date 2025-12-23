@@ -10,3 +10,6 @@
 - [x] Update About Us tagline to the new brand tagline.
 - [x] Refresh About Us carousel images with the latest assets.
 - [x] Run `npm run lint` after About Us updates.
+- [x] Update Solutions copy to emphasize robotic system integration.
+- [x] Adjust Solutions imagery styling to reduce awkward crops.
+- [x] Run `npm run lint` after Solutions updates.
