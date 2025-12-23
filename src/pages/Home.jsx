@@ -169,9 +169,9 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="rounded-full bg-brand-highlight px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white shadow-lg transition hover:translate-y-0.5"
+                className="rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-secondary"
               >
-                Schedule a Discussion
+                Discuss with Us
               </Link>
               <Link
                 to="/products"

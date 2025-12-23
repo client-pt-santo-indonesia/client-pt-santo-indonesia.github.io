@@ -57,7 +57,7 @@ src/
 ## Styling
 
 - Tailwind CSS dengan warna brand:
-  - Primary `#0D1B2A`
+  - Primary `#0D0ABD`
   - Secondary `#1B263B`
   - Accent `#E0E1DD`
   - Highlight `#4E8098`

@@ -35,15 +35,18 @@ const Navbar = () => {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `text-sm font-medium transition hover:text-brand-highlight ${
-                  isActive ? 'text-brand-highlight' : 'text-white'
+                `rounded-full px-3 py-1 text-sm font-medium transition hover:text-brand-highlight ${
+                  isActive ? 'bg-white/20 text-white ring-1 ring-white/40' : 'text-white'
                 }`
               }
             >
               {item.label}
             </NavLink>
           ))}
-          <Link to="/contact" className="rounded-full bg-brand-highlight px-4 py-2 text-sm font-semibold text-white">
+          <Link
+            to="/contact"
+            className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-brand-primary shadow-sm transition hover:bg-brand-accent"
+          >
             Consultation
           </Link>
         </div>
@@ -57,7 +60,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 `block rounded-md px-3 py-2 text-sm font-medium ${
-                  isActive ? 'bg-white/10 text-brand-highlight' : 'text-white'
+                  isActive ? 'bg-white/20 text-white ring-1 ring-white/40' : 'text-white'
                 }`
               }
             >
@@ -67,7 +70,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="block rounded-full bg-brand-highlight px-4 py-2 text-center text-sm font-semibold text-white"
+            className="block rounded-full bg-white px-4 py-2 text-center text-sm font-semibold text-brand-primary shadow-sm transition hover:bg-brand-accent"
           >
             Consultation
           </Link>

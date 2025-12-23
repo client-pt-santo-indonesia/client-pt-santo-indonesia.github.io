@@ -121,7 +121,7 @@ export const aboutCarousel = [
 ]
 
 export const heroContent = {
-  headline: 'Robot System Integrator for Turnkey Packaging Lines',
+  headline: 'Where Manufacturing Meets Perfection',
   subheadline:
     'PT. Santo Indonesia designs, builds, and integrates robotic packaging systems that connect bottle, cup, pouch, and end-of-line workflows into a single production-ready line.',
   primaryCta: 'View Solutions',
