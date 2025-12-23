@@ -9,27 +9,27 @@ const Footer = () => (
         <p className="mt-3 text-sm leading-7 text-brand-accent/80">{companyInfo.description}</p>
       </div>
       <div>
-        <p className="text-sm font-semibold text-white uppercase tracking-wide">Perusahaan</p>
+        <p className="text-sm font-semibold text-white uppercase tracking-wide">Company</p>
         <ul className="mt-3 space-y-2 text-sm">
           <li>
             <Link to="/about" className="hover:text-white">
-              Tentang Kami
+              About Us
             </Link>
           </li>
           <li>
             <Link to="/projects" className="hover:text-white">
-              Portfolio Project
+              Project Portfolio
             </Link>
           </li>
           <li>
             <Link to="/clients" className="hover:text-white">
-              Klien Kami
+              Our Clients
             </Link>
           </li>
         </ul>
       </div>
       <div>
-        <p className="text-sm font-semibold text-white uppercase tracking-wide">Kontak</p>
+        <p className="text-sm font-semibold text-white uppercase tracking-wide">Contact</p>
         <ul className="mt-3 space-y-2 text-sm">
           <li>{contactInfo.address}</li>
           <li>Tel: {contactInfo.phone}</li>
@@ -37,7 +37,7 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <p className="text-sm font-semibold text-white uppercase tracking-wide">Ikuti Kami</p>
+        <p className="text-sm font-semibold text-white uppercase tracking-wide">Follow Us</p>
         <a
           href="https://www.facebook.com/ptsantoindonesia"
           target="_blank"

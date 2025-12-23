@@ -1,6 +1,6 @@
 const ClientsSection = ({
-  title = 'Klien Kami',
-  description = 'Kami dipercaya oleh perusahaan lintas industri.',
+  title = 'Our Clients',
+  description = 'Trusted by companies across industries.',
   clientsList = [],
   limit,
   showTestimonials = false,
@@ -34,7 +34,7 @@ const ClientsSection = ({
                   </div>
                 </div>
                 <span className="rounded-full bg-brand-background px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-secondary">
-                  Solusi
+                  Solutions
                 </span>
               </div>
               <p className="mt-4 text-sm leading-7 text-brand-secondary">{client.solutions}</p>

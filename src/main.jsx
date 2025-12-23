@@ -6,19 +6,19 @@ import './index.css'
 
 // Router Configuration
 // ===================
-// BrowserRouter (default): Menggunakan clean URLs seperti /contact
-//   - Memerlukan file 404.html untuk GitHub Pages (sudah dibuat di public/404.html)
-//   - URL lebih bersih dan SEO-friendly
-//   - Direkomendasikan untuk production
+// BrowserRouter (default): Uses clean URLs like /contact
+//   - Requires a 404.html file for GitHub Pages (already in public/404.html)
+//   - Cleaner and more SEO-friendly URLs
+//   - Recommended for production
 //
-// HashRouter (alternatif): Menggunakan hash URLs seperti /#/contact
-//   - Tidak memerlukan konfigurasi server khusus
-//   - Bekerja di semua static hosting tanpa setup tambahan
-//   - URL kurang bersih tapi lebih kompatibel
+// HashRouter (alternative): Uses hash URLs like /#/contact
+//   - No special server configuration required
+//   - Works on any static hosting without extra setup
+//   - Less clean URLs but more compatible
 //
-// Untuk beralih ke HashRouter, ganti BrowserRouter dengan HashRouter di bawah ini
+// To switch to HashRouter, replace BrowserRouter with HashRouter below
 
-const Router = BrowserRouter // Ganti dengan HashRouter jika ingin menggunakan hash routing
+const Router = BrowserRouter // Swap with HashRouter if you want hash routing
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

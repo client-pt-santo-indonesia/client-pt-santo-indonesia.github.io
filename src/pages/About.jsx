@@ -29,9 +29,9 @@ const About = () => {
           <p className="mt-2 text-xs uppercase tracking-[0.4em] text-brand-secondary/70">{companyInfo.tagline}</p>
           <h1 className="mt-4 text-4xl font-semibold text-brand-primary">Integrator Packaging & Robotic Systems</h1>
           <p className="mt-4 text-base leading-7 text-brand-secondary">
-            Berawal dari workshop pada {companyInfo.history.workshopFounded} dan resmi menjadi perseroan pada{' '}
-            {companyInfo.history.ptEstablished}, kami terus menghadirkan mesin dan lini packaging untuk industri food &
-            beverage, kosmetik, farmasi, dan sektor manufaktur lainnya.
+            Starting from a workshop in {companyInfo.history.workshopFounded} and incorporated in{' '}
+            {companyInfo.history.ptEstablished}, we continue to deliver packaging machines and lines for food & beverage,
+            cosmetics, pharmaceuticals, and other manufacturing sectors.
           </p>
           <p className="mt-4 text-base leading-7 text-brand-secondary">{companyInfo.focus}</p>
         </div>
@@ -65,7 +65,7 @@ const About = () => {
                 type="button"
                 onClick={goToPrevious}
                 className="rounded-full bg-white/90 p-2 text-brand-primary shadow-lg transition hover:bg-white"
-                aria-label="Slide sebelumnya"
+                aria-label="Previous slide"
               >
                 <span aria-hidden="true">‹</span>
               </button>
@@ -73,7 +73,7 @@ const About = () => {
                 type="button"
                 onClick={goToNext}
                 className="rounded-full bg-white/90 p-2 text-brand-primary shadow-lg transition hover:bg-white"
-                aria-label="Slide berikutnya"
+                aria-label="Next slide"
               >
                 <span aria-hidden="true">›</span>
               </button>
@@ -92,7 +92,7 @@ const About = () => {
                       ? 'border-brand-primary bg-brand-primary text-white'
                       : 'border-brand-accent/60 text-brand-secondary hover:border-brand-primary/70'
                   }`}
-                  aria-label={`Tampilkan slide ${index + 1}`}
+                  aria-label={`Show slide ${index + 1}`}
                   aria-pressed={isActive}
                 >
                   <span className="font-semibold">{String(index + 1).padStart(2, '0')}</span>
@@ -106,8 +106,8 @@ const About = () => {
       <section className="bg-white py-16">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div className="rounded-3xl border border-brand-accent/40 bg-brand-background/60 p-6 shadow-inner">
-            <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/80">Visi & Nilai</p>
-            <h2 className="mt-3 text-2xl font-semibold text-brand-primary">Menyediakan solusi packaging terbaik</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/80">Vision & Values</p>
+            <h2 className="mt-3 text-2xl font-semibold text-brand-primary">Delivering the best packaging solutions</h2>
             <p className="mt-3 text-base leading-7 text-brand-secondary">{companyInfo.about.vision}</p>
             <p className="mt-3 text-base leading-7 text-brand-secondary">{companyInfo.about.strengths}</p>
           </div>
@@ -162,11 +162,11 @@ const About = () => {
         </div>
       </section>
       <CtaBanner
-        eyebrow="Butuh panduan memilih lini mesin?"
-        title="Jadwalkan sesi discovery untuk memetakan kebutuhan bottle, cup, pouch, maupun panel."
-        description="Kami bantu menyusun scope kerja, estimasi biaya, dan opsi mesin sesuai standar produksi Anda."
-        primary={{ label: 'Booking Konsultasi', href: '/contact' }}
-        secondary={{ label: 'Lihat Solusi', href: '/products' }}
+        eyebrow="Need guidance choosing a machine line?"
+        title="Schedule a discovery session to map bottle, cup, pouch, and panel needs."
+        description="We help define scope, cost estimates, and machine options based on your production standards."
+        primary={{ label: 'Book a Consultation', href: '/contact' }}
+        secondary={{ label: 'View Solutions', href: '/products' }}
       />
     </main>
   )

@@ -18,29 +18,29 @@ const Clients = () => {
     <main>
       <section className="bg-brand-primary py-16 text-white">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Klien Packaging & Otomasi</p>
-          <h1 className="mt-4 text-4xl font-semibold">Solusi Santo untuk Brand Nasional & Multinasional</h1>
+          <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Packaging & Automation Clients</p>
+          <h1 className="mt-4 text-4xl font-semibold">Santo Solutions for National & Multinational Brands</h1>
           <p className="mt-4 text-base text-brand-accent">
-            Dari bottle line untuk grup Charoen Pokphand hingga cup dan sachet system untuk industri dairy dan farmasi,
-            kami memadukan mesin dan robotik agar produksi lebih efisien.
+            From bottle lines for Charoen Pokphand to cup and sachet systems for dairy and pharma, we combine machinery
+            and robotics to improve production efficiency.
           </p>
         </div>
       </section>
       <ClientsSection
         clientsList={featuredClients}
         showTestimonials
-        title="Kolaborasi Prioritas"
-        description="Konimex, Ajinomoto, dan Aqua Danone mendapatkan dukungan penuh melalui otomasi lini cup, sachet, hingga vision system."
+        title="Priority Collaborations"
+        description="Konimex, Ajinomoto, and Aqua Danone receive full support through automation of cup lines, sachets, and vision systems."
       />
       <section className="bg-brand-background py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto text-center md:max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-secondary/70">
-              Partner lainnya
+              Other partners
             </p>
-            <h2 className="mt-3 text-3xl font-semibold text-brand-primary">Brand yang mempercayai solusi kami</h2>
+            <h2 className="mt-3 text-3xl font-semibold text-brand-primary">Brands that trust our solutions</h2>
             <p className="mt-4 text-base text-brand-secondary">
-              Logo dan nama berikut mewakili kolaborasi lintas sektor yang memanfaatkan packaging system Santo Indonesia.
+              The following logos and names represent cross-sector collaborations using Santo Indonesia packaging systems.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
@@ -57,11 +57,11 @@ const Clients = () => {
       </section>
       <CtaBanner
         tone="dark"
-        eyebrow="Siap jadi partner berikutnya?"
-        title="Mulai dengan sesi assessment gratis untuk lini prioritas Anda."
-        description="Pilih area produksi atau warehouse yang ingin dioptimalkan dan kami siapkan proposal implementasi awal."
+        eyebrow="Ready to be our next partner?"
+        title="Start with a free assessment session for your priority line."
+        description="Choose the production area or warehouse to optimize, and we will prepare an initial implementation proposal."
         primary={{ label: 'Request Assessment', href: '/contact' }}
-        secondary={{ label: 'Lihat Produk', href: '/products' }}
+        secondary={{ label: 'View Products', href: '/products' }}
       />
     </main>
   )

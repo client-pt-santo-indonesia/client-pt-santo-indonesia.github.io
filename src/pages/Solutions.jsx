@@ -7,19 +7,20 @@ const Solutions = () => {
     <main className="bg-white">
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">Business Lines</p>
-        <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">Solusi Packaging & Robotik Santo</h1>
+        <h1 className="mt-4 text-4xl font-semibold text-brand-primary sm:text-5xl">Santo Packaging & Robotics Solutions</h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-brand-secondary">
-          {companyInfo.valueProposition} Lini bisnis kami mencakup bottle, cup, pouch, bag, labeling, panel elektrik, dan
-          konstruksi pendukung sehingga klien menerima solusi turnkey.
+          {companyInfo.valueProposition} Our business lines include bottle, cup, pouch, bag, labeling, electrical panels,
+          and supporting construction so clients receive turnkey solutions.
         </p>
       </section>
       <section className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary">Product Detail</p>
-          <h2 className="mt-4 text-3xl font-semibold text-brand-primary">Spesifikasi teknis mesin unggulan</h2>
+          <h2 className="mt-4 text-3xl font-semibold text-brand-primary">Technical specifications for featured machines</h2>
           <p className="mt-4 text-base text-brand-secondary">
-            Informasi berikut merangkum keluaran terbaru kami untuk lini bottle, bag, pouch granular, dan pouch powder sesuai dokumen spesifikasi 2024.
+            The information below summarizes our latest output for bottle, bag, granular pouch, and powder pouch lines
+            based on the 2024 specification document.
           </p>
         </div>
         <div className="mt-12 space-y-10">
@@ -119,9 +120,9 @@ const Solutions = () => {
     <section className="bg-brand-background py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">Production Support & Others</p>
-        <h2 className="mt-4 text-3xl font-semibold text-brand-primary">Integrasi komponen pendukung lini</h2>
+        <h2 className="mt-4 text-3xl font-semibold text-brand-primary">Supporting line component integration</h2>
         <p className="mt-3 text-sm leading-7 text-brand-secondary">
-          Sebagai integrator, kami menyediakan komponen tambahan mulai dari robotic palletizer, conveyor, hingga carton erector & sealer.
+          As an integrator, we supply additional components from robotic palletizers and conveyors to carton erectors and sealers.
         </p>
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {productionSupport.map((support) => (
@@ -141,11 +142,11 @@ const Solutions = () => {
       </div>
     </section>
     <CtaBanner
-      eyebrow="Butuh konfigurasi custom?"
-      title="Diskusikan spesifikasi CHRONOS, TITAN, THEMIS, atau VORTEX yang paling sesuai dengan lini Anda."
-      description="Kami membantu menentukan kombinasi mesin, panel, dan conveyor yang mendukung throughput dan standar higienitas yang ditargetkan."
-      primary={{ label: 'Jadwalkan Demo', href: '/contact' }}
-      secondary={{ label: 'Lihat Project', href: '/projects' }}
+      eyebrow="Need a custom configuration?"
+      title="Discuss CHRONOS, TITAN, THEMIS, or VORTEX specs that best fit your line."
+      description="We help determine the combination of machines, panels, and conveyors that support your target throughput and hygiene standards."
+      primary={{ label: 'Schedule a Demo', href: '/contact' }}
+      secondary={{ label: 'View Projects', href: '/projects' }}
     />
   </main>
 )

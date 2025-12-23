@@ -1,0 +1,9 @@
+# TODO
+
+- [x] Update Home hero messaging to emphasize robot system integration.
+- [x] Replace Home hero slider images with client-provided assets and data mapping.
+- [x] Run `npm run lint` after Home hero changes.
+- [x] Audit user-facing copy for non-English text (data, pages, components).
+- [x] Translate copy to English and keep branding/product terms intact.
+- [x] Spot-check remaining UI text for consistency and update if needed.
+- [x] Run `npm run lint` and report results.

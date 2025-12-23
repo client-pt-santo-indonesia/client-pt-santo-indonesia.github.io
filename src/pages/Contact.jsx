@@ -5,10 +5,10 @@ const Contact = () => (
   <main>
     <section className="bg-brand-primary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/60">Hubungi Santo Indonesia</p>
-        <h1 className="mt-4 text-4xl font-semibold">Diskusikan Lini Packaging dan Robotik Anda</h1>
+        <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/60">Contact Santo Indonesia</p>
+        <h1 className="mt-4 text-4xl font-semibold">Discuss Your Packaging and Robotics Line</h1>
         <p className="mt-4 text-base text-brand-accent">
-          Kirimkan spesifikasi produk, target kapasitas, atau tantangan teknis dan kami akan merespons maks. 24 jam kerja.
+          Send product specifications, capacity targets, or technical challenges, and we will respond within 24 business hours.
         </p>
       </div>
     </section>
@@ -16,16 +16,16 @@ const Contact = () => (
       <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="space-y-6">
           <div className="rounded-3xl bg-white p-6 shadow-lg">
-            <h2 className="text-2xl font-semibold text-brand-primary">Hubungi langsung</h2>
+            <h2 className="text-2xl font-semibold text-brand-primary">Contact directly</h2>
             <ul className="mt-4 space-y-3 text-sm leading-7 text-brand-secondary">
               <li>
-                <span className="font-semibold text-brand-primary">Alamat:</span> {contactInfo.address}
+                <span className="font-semibold text-brand-primary">Address:</span> {contactInfo.address}
               </li>
               <li>
-                <span className="font-semibold text-brand-primary">Telepon:</span> {contactInfo.phone}
+                <span className="font-semibold text-brand-primary">Phone:</span> {contactInfo.phone}
               </li>
               <li>
-                <span className="font-semibold text-brand-primary">Telepon Alternatif:</span> {contactInfo.phoneAlt}
+                <span className="font-semibold text-brand-primary">Alternate Phone:</span> {contactInfo.phoneAlt}
               </li>
               <li>
                 <span className="font-semibold text-brand-primary">Email:</span> {contactInfo.email}
@@ -35,14 +35,14 @@ const Contact = () => (
               </li>
               <li>
                 <a href={contactInfo.whatsapp} target="_blank" rel="noreferrer" className="font-semibold text-brand-highlight">
-                  WhatsApp kami →
+                  WhatsApp us →
                 </a>
               </li>
             </ul>
           </div>
           <div className="rounded-3xl overflow-hidden shadow-lg">
             <iframe
-              title="Lokasi Santo Indonesia"
+              title="Santo Indonesia location"
               src={contactInfo.mapEmbed}
               loading="lazy"
               className="h-64 w-full border-0"
@@ -53,10 +53,10 @@ const Contact = () => (
         </div>
         <div className="space-y-6">
           <div className="rounded-3xl bg-white p-6 shadow-2xl">
-            <h2 className="text-2xl font-semibold text-brand-primary">Cara cepat terhubung</h2>
+            <h2 className="text-2xl font-semibold text-brand-primary">Fast ways to connect</h2>
             <p className="mt-3 text-sm leading-7 text-brand-secondary">
-              Kirimkan voice note, spesifikasi produk, atau layout pabrik Anda melalui kanal berikut. Tim kami akan
-              menjawab maksimal dalam 24 jam kerja.
+              Send a voice note, product specifications, or your factory layout via the channels below. Our team will
+              respond within 24 business hours.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -65,26 +65,26 @@ const Contact = () => (
                 rel="noreferrer"
                 className="inline-flex flex-1 items-center justify-center rounded-full bg-brand-highlight px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
               >
-                Chat WhatsApp
+                Chat on WhatsApp
               </a>
               <a
                 href={`mailto:${contactInfo.email}`}
                 className="inline-flex flex-1 items-center justify-center rounded-full border border-brand-primary/30 px-5 py-3 text-sm font-semibold text-brand-primary transition hover:bg-brand-primary hover:text-white"
               >
-                Kirim Email
+                Send Email
               </a>
             </div>
             <div className="mt-6 space-y-2 text-sm text-brand-secondary">
-              <p>✅ Sertakan jenis produk & target output per jam</p>
-              <p>✅ Lampirkan foto mesin eksisting bila ada</p>
-              <p>✅ Tulis preferensi brand komponen (PLC, robot, dll.)</p>
+              <p>✅ Include product type and hourly output target</p>
+              <p>✅ Attach photos of existing machines if available</p>
+              <p>✅ Note component brand preferences (PLC, robots, etc.)</p>
             </div>
           </div>
           <div className="rounded-3xl bg-white p-6 shadow-lg">
-            <h3 className="text-xl font-semibold text-brand-primary">Butuh NDA?</h3>
+            <h3 className="text-xl font-semibold text-brand-primary">Need an NDA?</h3>
             <p className="mt-3 text-sm leading-7 text-brand-secondary">
-              Kami siap menandatangani Non Disclosure Agreement sebelum menerima data teknis Anda. Kirimkan draft ke
-              email kami dan sebutkan PIC legal yang dapat kami hubungi.
+              We are ready to sign a Non-Disclosure Agreement before receiving your technical data. Send the draft to
+              our email and include a legal contact person we can reach.
             </p>
           </div>
         </div>
@@ -92,11 +92,11 @@ const Contact = () => (
     </section>
     <CtaBanner
       tone="dark"
-      eyebrow="Lebih nyaman bicara langsung?"
-      title="Hubungi kami via WhatsApp atau jadwalkan kunjungan onsite."
-      description="Tim kami siap merespons dalam 24 jam kerja dan menyiapkan NDA bila dibutuhkan."
-      primary={{ label: 'Chat WhatsApp', href: contactInfo.whatsapp }}
-      secondary={{ label: 'Lihat Produk Kami', href: '/products' }}
+      eyebrow="Prefer to talk directly?"
+      title="Contact us via WhatsApp or schedule an onsite visit."
+      description="Our team responds within 24 business hours and can prepare an NDA if needed."
+      primary={{ label: 'Chat on WhatsApp', href: contactInfo.whatsapp }}
+      secondary={{ label: 'View Our Products', href: '/products' }}
     />
   </main>
 )

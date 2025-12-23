@@ -1,21 +1,21 @@
 import { useMemo, useState } from 'react'
 
 const ProjectsSection = ({
-  title = 'Project Unggulan',
-  description = 'Mewujudkan lini produksi modern di seluruh Indonesia.',
+  title = 'Featured Projects',
+  description = 'Building modern production lines across Indonesia.',
   projectsList = [],
   highlightCount,
   enableFilter = false,
 }) => {
   const industries = useMemo(() => {
     const unique = new Set(projectsList.map((project) => project.industry))
-    return ['Semua', ...unique]
+    return ['All', ...unique]
   }, [projectsList])
 
-  const [activeFilter, setActiveFilter] = useState(industries[0] ?? 'Semua')
+  const [activeFilter, setActiveFilter] = useState(industries[0] ?? 'All')
 
   const filteredProjects =
-    activeFilter === 'Semua'
+    activeFilter === 'All'
       ? projectsList
       : projectsList.filter((project) => project.industry === activeFilter)
 
@@ -62,8 +62,8 @@ const ProjectsSection = ({
                 </p>
               )}
               <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-wide text-brand-secondary/70">
-                <span>Timeline 4-12 minggu</span>
-                <span>ROI 12-24 bln</span>
+                <span>Timeline 4-12 weeks</span>
+                <span>ROI 12-24 months</span>
               </div>
             </article>
           ))}

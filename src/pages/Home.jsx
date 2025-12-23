@@ -1,21 +1,15 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
-import { companyInfo, heroContent, services, eventsAndPartners, productDetails } from '../data/siteContent'
+import { companyInfo, heroContent, heroSlides, services, eventsAndPartners } from '../data/siteContent'
 import santoLogo from '@assets/LOGO SANTO INDONESIA (kecil).jpg'
 
-const carouselSlides = productDetails.map((product) => ({
-  id: product.slug,
-  title: `${product.name} — ${product.subtitle}`,
-  description: product.summary,
-  location: product.badges.join(' · '),
-  image: product.gallery?.[0],
-}))
+const carouselSlides = heroSlides
 
 const navigationCards = [
   {
-    title: 'Profil',
-    subtitle: 'Perjalanan Kami',
+    title: 'Profile',
+    subtitle: 'Our Journey',
     path: '/about',
     icon: (
       <svg
@@ -35,8 +29,8 @@ const navigationCards = [
     ),
   },
   {
-    title: 'Solusi',
-    subtitle: 'Mesin & Robot',
+    title: 'Solutions',
+    subtitle: 'Machines & Robotics',
     path: '/products',
     icon: (
       <svg
@@ -59,8 +53,8 @@ const navigationCards = [
     ),
   },
   {
-    title: 'Klien',
-    subtitle: 'Brand Nasional',
+    title: 'Clients',
+    subtitle: 'National Brands',
     path: '/clients',
     icon: (
       <svg
@@ -83,7 +77,7 @@ const navigationCards = [
     ),
   },
   {
-    title: 'Proyek',
+    title: 'Projects',
     subtitle: 'Case Studies',
     path: '/projects',
     icon: (
@@ -104,8 +98,8 @@ const navigationCards = [
     ),
   },
   {
-    title: 'Kontak',
-    subtitle: 'Hubungi Kami',
+    title: 'Contact',
+    subtitle: 'Contact Us',
     path: '/contact',
     icon: (
       <svg
@@ -132,10 +126,10 @@ const showEventsSection = false
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0)
   const heroPanClasses = useMemo(
-    () => carouselSlides.map(() => heroPanVariants[Math.floor(Math.random() * heroPanVariants.length)]),
+    () => carouselSlides.map((_, index) => heroPanVariants[index % heroPanVariants.length]),
     []
   )
-  const heroPanDurations = useMemo(() => carouselSlides.map(() => `${14 + Math.random() * 6}s`), [])
+  const heroPanDurations = useMemo(() => carouselSlides.map((_, index) => `${14 + (index % 6)}s`), [])
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -159,7 +153,7 @@ const Home = () => {
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl border border-brand-primary/15 bg-white p-2 shadow-md">
+            <div className="mx-auto flex h-36 w-36 items-center justify-center rounded-3xl bg-white p-2 sm:h-40 sm:w-40">
               <img
                 src={santoLogo}
                 alt={`${companyInfo.name} monogram`}
@@ -177,13 +171,13 @@ const Home = () => {
                 to="/contact"
                 className="rounded-full bg-brand-highlight px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white shadow-lg transition hover:translate-y-0.5"
               >
-                Jadwalkan Diskusi
+                Schedule a Discussion
               </Link>
               <Link
                 to="/products"
                 className="rounded-full border border-brand-primary/40 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-brand-primary transition hover:bg-brand-primary hover:text-white"
               >
-                Lihat Solusi
+                View Solutions
               </Link>
             </div>
           </div>
@@ -223,7 +217,7 @@ const Home = () => {
                       key={slide.id}
                       className={`h-2.5 w-8 rounded-full transition ${index === activeSlide ? 'bg-white' : 'bg-white/30'}`}
                       onClick={() => setActiveSlide(index)}
-                      aria-label={`Lihat slide ${index + 1}`}
+                      aria-label={`View slide ${index + 1}`}
                     />
                   ))}
                 </div>
@@ -239,7 +233,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-12">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.4em] text-brand-secondary">Navigasi</p>
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.4em] text-brand-secondary">Navigation</p>
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               {navigationCards.map((item) => (
                 <Link
@@ -253,7 +247,7 @@ const Home = () => {
                   <p className="mt-4 text-lg font-semibold text-brand-primary">{item.title}</p>
                   <p className="text-sm text-brand-secondary/80">{item.subtitle}</p>
                   <span className="mt-5 inline-flex items-center text-sm font-semibold text-brand-highlight">
-                    Buka
+                    Open
                     <span className="ml-2 inline-block transition group-hover:translate-x-1">&rarr;</span>
                   </span>
                 </Link>
@@ -272,7 +266,7 @@ const Home = () => {
               <span className="tracking-[0.3em]">Packaging Machinery Specialist</span>
             </div>
             <h2 className="mt-5 text-3xl font-semibold text-brand-primary sm:text-4xl">
-              Delapan lini bisnis untuk kebutuhan packaging dan otomasi
+              Eight business lines for packaging and automation needs
             </h2>
             <div className="mt-10 grid gap-5 md:grid-cols-2">
               {services.map((item) => (
@@ -307,7 +301,7 @@ const Home = () => {
                 <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/70">Events</p>
                 <h2 className="mt-3 text-3xl font-semibold text-brand-primary">Industry presence</h2>
                 <p className="mt-3 text-sm leading-7 text-brand-secondary">
-                  Kami mengikuti acara industri untuk menunjukkan inovasi terbaru serta menangkap kebutuhan pasar.
+                  We attend industry events to showcase the latest innovations and capture market needs.
                 </p>
                 <div className="mt-6 space-y-4">
                   {eventsAndPartners.events.map((event) => (
@@ -331,7 +325,7 @@ const Home = () => {
                   ))}
                 </div>
                 <div className="rounded-3xl border border-brand-accent/40 bg-white p-6 shadow-lg">
-                  <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/60">Kontak Global</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/60">Global Contact</p>
                   <h3 className="mt-2 text-xl font-semibold text-brand-primary">{companyInfo.tagline}</h3>
                   <p className="mt-3 text-sm leading-7 text-brand-secondary">{companyInfo.address}</p>
                   <ul className="mt-4 space-y-1 text-sm text-brand-secondary">
@@ -347,11 +341,11 @@ const Home = () => {
         </section>
       )}
       <CtaBanner
-        eyebrow="Siap memperbarui lini packaging?"
-        title="Tim kami membantu memetakan kebutuhan bottle, cup, pouch, bag, dan robotik sesuai target kapasitas Anda."
-        description="Sampaikan spesifikasi produk, standar higienitas, serta target throughput untuk kami terjemahkan menjadi konfigurasi mesin."
-        primary={{ label: 'Diskusikan Project', href: '/contact' }}
-        secondary={{ label: 'Lihat Project Kami', href: '/projects' }}
+        eyebrow="Ready to upgrade your packaging line?"
+        title="Our team maps bottle, cup, pouch, bag, and robotics needs based on your capacity targets."
+        description="Share product specs, hygiene standards, and throughput goals so we can translate them into machine configurations."
+        primary={{ label: 'Discuss a Project', href: '/contact' }}
+        secondary={{ label: 'View Our Projects', href: '/projects' }}
       />
     </main>
   )

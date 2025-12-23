@@ -7,25 +7,25 @@ const Projects = () => (
     <section className="bg-brand-secondary py-16 text-white">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm uppercase tracking-[0.4em] text-brand-accent/70">Project Portfolio</p>
-        <h1 className="mt-4 text-4xl font-semibold">Lini Packaging & Robotik yang Telah Kami Implementasikan</h1>
+        <h1 className="mt-4 text-4xl font-semibold">Packaging & Robotics Lines We Have Delivered</h1>
         <p className="mt-4 text-base text-brand-accent">
-          Portfolio berikut merangkum bottle line, cup packaging, hingga sachet system yang dirancang untuk memenuhi
-          standar F&B serta farmasi Indonesia.
+          This portfolio summarizes bottle lines, cup packaging, and sachet systems designed to meet Indonesian F&B and
+          pharmaceutical standards.
         </p>
       </div>
     </section>
     <ProjectsSection
       projectsList={projects}
       enableFilter
-      title="Eksplorasi Project Kami"
-      description="Gunakan filter industri untuk menemukan referensi yang relevan dengan bisnis Anda."
+      title="Explore Our Projects"
+      description="Use the industry filter to find references relevant to your business."
     />
     <CtaBanner
-      eyebrow="Butuh studi kelayakan?"
-      title="Sampaikan target kapasitas produksi, kami bantu hitung konfigurasi mesin terbaik."
-      description="Tim solution architect akan menyiapkan simulasi throughput, kebutuhan utility, dan estimasi investasi."
-      primary={{ label: 'Diskusi Proyek', href: '/contact' }}
-      secondary={{ label: 'Lihat Solusi', href: '/products' }}
+      eyebrow="Need a feasibility study?"
+      title="Share your production capacity targets, and we will calculate the best machine configuration."
+      description="Our solution architects will prepare throughput simulations, utility requirements, and investment estimates."
+      primary={{ label: 'Discuss a Project', href: '/contact' }}
+      secondary={{ label: 'View Solutions', href: '/products' }}
     />
   </main>
 )

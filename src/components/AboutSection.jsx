@@ -7,23 +7,23 @@ const AboutSection = ({ compact = false }) => (
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-highlight">About Us</p>
         <h2 className="mt-3 text-3xl font-semibold text-brand-primary">
-          Engineering Packaging Sejak {companyInfo.history.workshopFounded}
+          Packaging Engineering Since {companyInfo.history.workshopFounded}
         </h2>
         <p className="mt-4 text-base leading-7 text-brand-secondary">{companyInfo.history.narrative}</p>
         <p className="mt-4 text-base leading-7 text-brand-secondary">{companyInfo.capabilitiesOverview}</p>
         <div className="mt-6 grid grid-cols-3 gap-4 rounded-2xl bg-brand-background p-6 text-center text-brand-primary sm:max-w-xl">
           <div>
             <p className="text-3xl font-semibold">{companyInfo.history.workshopFounded}</p>
-            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Workshop berdiri</p>
+            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Workshop founded</p>
           </div>
           <div>
             <p className="text-3xl font-semibold">{companyInfo.history.ptEstablished}</p>
-            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">PT dibentuk</p>
+            <p className="text-xs uppercase tracking-wide text-brand-secondary/70">Company incorporated</p>
           </div>
           <Link to="/products" className="group transition hover:opacity-80">
             <p className="text-3xl font-semibold">{businessLines.length}</p>
             <p className="text-xs uppercase tracking-wide text-brand-secondary/70 flex items-center justify-center gap-1">
-              Lini solusi
+              Solution lines
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -43,7 +43,7 @@ const AboutSection = ({ compact = false }) => (
       <div className="space-y-6">
         {companyValues.map((value) => (
           <div key={value.title} className="rounded-2xl border border-brand-accent/60 bg-brand-background/60 p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-secondary/80">Nilai</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-secondary/80">Value</p>
             <h3 className="mt-1 text-xl font-semibold text-brand-primary">{value.title}</h3>
             <p className="mt-2 text-sm leading-6 text-brand-secondary">{value.description}</p>
           </div>
