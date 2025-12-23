@@ -13,3 +13,7 @@
 - [x] Update Solutions copy to emphasize robotic system integration.
 - [x] Adjust Solutions imagery styling to reduce awkward crops.
 - [x] Run `npm run lint` after Solutions updates.
+- [ ] Request missing client logo assets to replace placeholders.
+- [x] Update client testimonials to be general and solution-agnostic.
+- [x] Ensure Our Clients UI shows a logo mark for every client entry.
+- [x] Run `npm run lint` after Our Clients updates.

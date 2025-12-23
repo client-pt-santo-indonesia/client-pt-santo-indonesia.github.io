@@ -16,7 +16,16 @@ import santoHero40 from '@assets/compro/santo-company-profile-2024-r1-40.png'
 import santoHero41 from '@assets/compro/santo-company-profile-2024-r1-41.png'
 import santoHero42 from '@assets/compro/santo-company-profile-2024-r1-42.png'
 import logoAjinomoto from '@assets/logo/Ajinomoto.svg'
+import logoFornusaLemonilo from '@assets/logo/Fornusa Agung Mulia Lemonilo.png'
+import logoJayaAbadiRegal from '@assets/logo/Jaya Abadi - REGAL Biscuit.png'
+import logoLionWings from '@assets/logo/Lion Wings.png'
+import logoOtGroup from '@assets/logo/OT Group.png'
+import logoGoldenLeaves from '@assets/logo/PT Golden Leaves Jaya Abadi.png'
+import logoGreenfood from '@assets/logo/PT Greenfood.png'
+import logoIrawanDjaja from '@assets/logo/PT. Irawan Djaja Agung.png'
 import logoKonimex from '@assets/logo/PT. Konimex.png'
+import logoMitraLegi from '@assets/logo/PT. Mitra Legi Sampoerna.png'
+import logoSingaMas from '@assets/logo/pt-singamas.png'
 import logoAquaDanone from '@assets/logo/Tirta Investama - AQUA Danone.png'
 
 export const companyInfo = {
@@ -290,85 +299,97 @@ export const clients = [
   {
     name: 'PT. Singa Mas Indonesia',
     industry: 'Food & Beverage',
-    solutions:
-      'CHRONOS 164 for bottle rinsing-filling-capping and POSEIDON 24 for cup feeding, filling, sealing, and trimming.',
-    testimonial: 'Bottle and cup line integration meets Charoen Pokphand hygiene standards.',
+    summary: 'End-to-end line integration for high-volume food and beverage production.',
+    testimonial: 'The partnership keeps our operations reliable and consistent.',
+    logo: logoSingaMas,
   },
   {
     name: 'PT. Konimex',
     industry: 'Pharma & FMCG',
-    solutions: 'POSEIDON 4TS/8TS and THEMIS XSI for sachets and high-capacity cup filling.',
-    testimonial: 'Sachet and cup lines accelerate the launch of nutritional pharma products.',
+    summary: 'Collaborative packaging line improvements for pharma and FMCG production.',
+    testimonial: 'Their team supports smooth launches across product lines.',
     logo: logoKonimex,
+    logoFit: 'contain',
+    logoContainerClassName: 'p-1',
+    logoImageClassName: 'scale-75',
   },
   {
     name: 'PT. Irawan Djaja Agung',
     industry: 'Consumer Goods',
-    solutions: 'VENUS 8SV bottle filling with vacuum, AURORA 4SSC capping, and HELIOS S labeling.',
-    testimonial: 'Filling, capping, and labeling integration keeps product consistency.',
+    summary: 'Modernized filling and packaging workflows to sustain consistent output.',
+    testimonial: 'Quality results stay steady thanks to clear coordination.',
+    logo: logoIrawanDjaja,
   },
   {
     name: 'Lion Wings',
     industry: 'FMCG',
-    solutions: 'Robotic systems for filling, capping, orienting, packing, palletizing, and monoblock lines.',
-    testimonial: 'Robotic automation improves multi-product throughput.',
+    summary: 'Automation support for multi-SKU FMCG production and line scalability.',
+    testimonial: 'They respond quickly and adapt to our changing production needs.',
+    logo: logoLionWings,
+    logoFit: 'contain',
   },
   {
-    name: 'Tirta Investama / AQUA Danone',
+    name: 'AQUA Danone',
     industry: 'Beverage',
-    solutions: 'Cup filling control systems and parts to ensure drinking water quality.',
-    testimonial: 'System control keeps flavor consistency and hygiene.',
+    summary: 'Process stability and line reliability support for beverage operations.',
+    testimonial: 'We value the consistent uptime and careful attention to detail.',
     logo: logoAquaDanone,
+    logoFit: 'contain',
+    logoContainerClassName: 'p-1',
+    logoImageClassName: 'scale-75',
   },
   {
     name: 'PT. Golden Leaves Jaya Abadi',
     industry: 'Cosmetics & Personal Care',
-    solutions: 'THEMIS 10M automatic pouch filling and sealing machine.',
-    testimonial: 'Premium pouches maintain quality with precise dosing.',
+    summary: 'Precision packaging support for premium cosmetics and personal care.',
+    testimonial: 'The collaboration protects product quality and brand presentation.',
+    logo: logoGoldenLeaves,
   },
   {
     name: 'PT. Greenfood Beverage',
     industry: 'Food & Beverage',
-    solutions:
-      'Cup filling and sealing, monoblock bottle line, conveyor system, and steam tunnel for ready-to-drink lines.',
-    testimonial: 'Cup and bottle line integration shortens changeovers.',
+    summary: 'Integrated line support for ready-to-drink manufacturing.',
+    testimonial: 'The team keeps our production transitions efficient and organized.',
+    logo: logoGreenfood,
   },
   {
     name: 'Ultra Prima Abadi / OT Group',
     industry: 'FMCG',
-    solutions: 'Horizontal control systems and vacuum bag lifters to improve packing ergonomics.',
-    testimonial: 'Control systems keep existing machines stable.',
+    summary: 'Ergonomic improvements and system stabilization for packaging operations.',
+    testimonial: 'Their support helps us maintain safe and steady workflows.',
+    logo: logoOtGroup,
+    logoFit: 'contain',
   },
   {
     name: 'PT. Mitra Legi Sampoerna',
     industry: 'Manufacturing',
-    solutions: 'TITAN 1MX and THEMIS 10M for high-value bag and pouch needs.',
-    testimonial: 'Bag and pouch automation ensures dosing accuracy.',
+    summary: 'High-accuracy packaging support for manufacturing materials.',
+    testimonial: 'We appreciate the dependable performance and responsive service.',
+    logo: logoMitraLegi,
   },
   {
     name: 'Ajinomoto',
     industry: 'Food Seasoning',
-    solutions: 'Vision camera systems for quality inspection.',
-    testimonial: 'Visual inspection improves final product quality.',
+    summary: 'Quality assurance support to keep seasoning production consistent.',
+    testimonial: 'Their attention to standards reinforces our quality goals.',
     logo: logoAjinomoto,
+    logoFit: 'contain',
+    logoContainerClassName: 'p-1',
+    logoImageClassName: 'scale-75',
   },
   {
     name: 'Fornusa Agung Mulia / Lemonilo',
     industry: 'Food & Beverage',
-    solutions: 'Check weighers to maintain pouch weight standards.',
-    testimonial: 'Real-time weight control reduces waste.',
+    summary: 'Weight control and compliance support for packaged food production.',
+    testimonial: 'The partnership reduces waste and keeps outputs consistent.',
+    logo: logoFornusaLemonilo,
   },
   {
     name: 'Jaya Abadi / REGAL Biscuit',
     industry: 'Food Manufacturing',
-    solutions: 'Tray filling machines for classic biscuit lines.',
-    testimonial: 'Automated tray filling improves consistency.',
-  },
-  {
-    name: 'Mitrapak Eramandiri',
-    industry: 'Industrial Components',
-    solutions: 'Robotic system components for custom packaging lines.',
-    testimonial: 'Component supply speeds up internal robotic integration.',
+    summary: 'Automated handling support for high-volume biscuit production.',
+    testimonial: 'Production consistency has improved with their ongoing support.',
+    logo: logoJayaAbadiRegal,
   },
 ]
 
@@ -441,13 +462,6 @@ export const projects = [
     industry: 'Food Seasoning',
     location: 'Indonesia',
     description: 'Camera system for sachet quality inspection to ensure visual standards are met.',
-  },
-  {
-    name: 'Robotic Component Supply',
-    client: 'Mitrapak Eramandiri',
-    industry: 'Industrial Components',
-    location: 'Indonesia',
-    description: 'Custom robotic components to accelerate client internal packaging integration.',
   },
 ]
 

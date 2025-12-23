@@ -1,3 +1,5 @@
+import ClientLogo from './ClientLogo'
+
 const ClientsSection = ({
   title = 'Our Clients',
   description = 'Trusted by companies across industries.',
@@ -23,21 +25,28 @@ const ClientsSection = ({
             >
               <div className="flex flex-wrap items-start justify-between gap-4 lg:min-h-[120px]">
                 <div className="flex items-center gap-4">
-                  {client.logo && (
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-background">
-                      <img src={client.logo} alt={`Logo ${client.name}`} className="max-h-10 max-w-[2.5rem] object-contain" />
-                    </div>
-                  )}
+                  <ClientLogo
+                    name={client.name}
+                    logo={client.logo}
+                    logoFit={client.logoFit}
+                    className={client.logoContainerClassName}
+                    imageClassName={client.logoImageClassName}
+                  />
                   <div>
                     <h3 className="text-xl font-semibold text-brand-primary">{client.name}</h3>
+                    {client.secondaryName && (
+                      <p className="mt-0.5 text-xs font-medium text-brand-secondary/50">
+                        {client.secondaryName}
+                      </p>
+                    )}
                     <p className="text-xs uppercase tracking-[0.4em] text-brand-secondary/70">{client.industry}</p>
                   </div>
                 </div>
                 <span className="rounded-full bg-brand-background px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-secondary">
-                  Solutions
+                  Partnership
                 </span>
               </div>
-              <p className="mt-4 text-sm leading-7 text-brand-secondary">{client.solutions}</p>
+              <p className="mt-4 text-sm leading-7 text-brand-secondary">{client.summary}</p>
               {showTestimonials && client.testimonial && (
                 <div className="mt-4 rounded-2xl border border-dashed border-brand-accent/60 bg-brand-background/60 p-4 text-sm text-brand-secondary">
                   “{client.testimonial}”
