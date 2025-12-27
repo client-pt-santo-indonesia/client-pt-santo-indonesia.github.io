@@ -79,28 +79,6 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {aboutCarousel.map((item, index) => {
-              const isActive = index === activeSlide
-              return (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => setActiveSlide(index)}
-                  className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition ${
-                    isActive
-                      ? 'border-brand-primary bg-brand-primary text-white'
-                      : 'border-brand-accent/60 text-brand-secondary hover:border-brand-primary/70'
-                  }`}
-                  aria-label={`Show slide ${index + 1}`}
-                  aria-pressed={isActive}
-                >
-                  <span className="font-semibold">{String(index + 1).padStart(2, '0')}</span>
-                  <span className="hidden sm:inline">{item.title}</span>
-                </button>
-              )
-            })}
-          </div>
         </div>
       </section>
       <section className="bg-white py-16">
@@ -126,7 +104,14 @@ const About = () => {
               <p className="text-sm font-semibold uppercase tracking-[0.4em] text-brand-secondary/60">Business Partner</p>
               {eventsAndPartners.partners.map((partner) => (
                 <div key={partner.name} className="mt-3">
-                  <h3 className="text-lg font-semibold text-brand-primary">{partner.name}</h3>
+                  {partner.logo ? (
+                    <img
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      className="h-10 w-auto object-contain"
+                      loading="lazy"
+                    />
+                  ) : null}
                   <p className="text-xs uppercase tracking-[0.4em] text-brand-secondary/50">{partner.role}</p>
                   <p className="mt-2 text-sm leading-6 text-brand-secondary">{partner.description}</p>
                 </div>

@@ -6,12 +6,12 @@ import themisCatalogFront from '@assets/img/3 Themis Catalogue - Front side 2023
 import themis4mFront from '@assets/img/4 Themis 4M Catalogue - front side.jpg'
 import titanCatalogFront from '@assets/img/5 TITAN Catalogue - front side 2023.jpg'
 import vortexCatalogFront from '@assets/img/6 vortex Catalogue - front side.jpg'
-import santoCarousel43 from '@assets/compro/santo-company-profile-2024-r1-43.png'
-import santoCarousel44 from '@assets/compro/santo-company-profile-2024-r1-44.png'
-import santoCarousel45 from '@assets/compro/santo-company-profile-2024-r1-45.png'
-import santoCarousel46 from '@assets/compro/santo-company-profile-2024-r1-46.png'
-import santoCarousel47 from '@assets/compro/santo-company-profile-2024-r1-47.png'
-import santoCarousel48 from '@assets/compro/santo-company-profile-2024-r1-48.png'
+import santoAbout49 from '@assets/about-us/santo-company-profile-2024-r1-49.png'
+import santoAbout50 from '@assets/about-us/santo-company-profile-2024-r1-50.png'
+import santoAbout51 from '@assets/about-us/santo-company-profile-2024-r1-51.png'
+import santoAbout52 from '@assets/about-us/santo-company-profile-2024-r1-52.png'
+import santoAbout53 from '@assets/about-us/santo-company-profile-2024-r1-53.png'
+import santoAbout54 from '@assets/about-us/santo-company-profile-2024-r1-54.png'
 import santoHero40 from '@assets/compro/santo-company-profile-2024-r1-40.png'
 import santoHero41 from '@assets/compro/santo-company-profile-2024-r1-41.png'
 import santoHero42 from '@assets/compro/santo-company-profile-2024-r1-42.png'
@@ -27,6 +27,7 @@ import logoKonimex from '@assets/logo/PT. Konimex.png'
 import logoMitraLegi from '@assets/logo/PT. Mitra Legi Sampoerna.png'
 import logoSingaMas from '@assets/logo/pt-singamas.png'
 import logoAquaDanone from '@assets/logo/Tirta Investama - AQUA Danone.png'
+import logoYaskawa from '@assets/logo/logo-yaskawa.png'
 
 export const companyInfo = {
   name: 'PT. Santo Indonesia',
@@ -105,50 +106,50 @@ export const packagingSpecialist = {
 export const aboutCarousel = [
   {
     id: 'robotic-cell',
-    title: 'ALLPACK 2024 - Booth Overview',
+    title: 'Booth Welcome & Team Meet',
     description:
-      'Opening moments at the Santo Indonesia booth at ALLPACK Jakarta 2024 showcased the team, guests, and key exhibits.',
-    image: santoCarousel43,
+      'The Santo Indonesia team greets visitors at the booth while showcasing key machine highlights.',
+    image: santoAbout49,
     alt: 'Santo Indonesia booth at ALLPACK Jakarta 2024',
   },
   {
     id: 'cap-handling',
-    title: 'Robotics & Packaging Demo',
+    title: 'SANTO Booth Showcase',
     description:
-      'A demo area highlighting robotic integration with the packaging line as visitors engage with engineer briefings.',
-    image: santoCarousel44,
+      'Team members and visitors gather at the booth for a closer look at the packaging line setup.',
+    image: santoAbout50,
     alt: 'Visitors watching a robotics packaging demo at the event',
   },
   {
     id: 'monoblock-line',
-    title: 'Monoblock System Presentation',
+    title: 'Packaging Line Demonstrations',
     description:
-      'Technical consultants explain the monoblock module to prospective clients, highlighting mechanical details.',
-    image: santoCarousel45,
+      'Live demos and product walk-throughs attract crowds throughout the exhibition day.',
+    image: santoAbout51,
     alt: 'Engineer presenting a monoblock module during the event',
   },
   {
     id: 'control-panel',
-    title: 'Panel & Pneumatic Workshop',
+    title: 'Themis 10M Line Walkthrough',
     description:
-      'The team showcases control panels and pneumatic cabinets during the Q&A session with visitors.',
-    image: santoCarousel46,
+      'Visitors review machine features and performance details alongside the Santo engineering team.',
+    image: santoAbout52,
     alt: 'Discussion about electrical panels at the booth',
   },
   {
     id: 'cup-filling',
-    title: 'Cup Filling Line Demo',
+    title: 'TRINITY 60R Highlights',
     description:
-      'A cup filling demo as the team explains the process stages to the food and beverage audience.',
-    image: santoCarousel47,
+      'Product specialists share the TRINITY 60R capabilities with partners and prospective clients.',
+    image: santoAbout53,
     alt: 'Cup filling demo at an industry exhibition',
   },
   {
     id: 'turnkey-conveyor',
-    title: 'Partner Visits & Networking',
+    title: 'Partner & Client Discussions',
     description:
-      'Networking with partners and prospective clients discussing turnkey projects at the booth.',
-    image: santoCarousel48,
+      'Collaborative talks with partners and visitors focused on turnkey packaging solutions.',
+    image: santoAbout54,
     alt: 'Meeting with partners at the exhibition booth',
   },
 ]
@@ -486,8 +487,10 @@ export const eventsAndPartners = {
   partners: [
     {
       name: 'YASKAWA',
-      description: 'Robotics partner for motion control, servo integration, and high-precision automation systems.',
+      description:
+        'Japanese automation leader since 1915—Motoman robots, Σ-X servos, and smart drives that boost productivity worldwide, including PT Yaskawa Electric Indonesia.',
       role: 'Business Partner',
+      logo: logoYaskawa,
     },
   ],
 }
