@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
 import Solutions from './pages/Solutions'
+import SponsorLanding from './pages/SponsorLanding'
 import FloatingWhatsapp from './components/FloatingWhatsapp'
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/media-sponsor" element={<SponsorLanding />} />
         </Routes>
       </div>
       <FloatingWhatsapp />

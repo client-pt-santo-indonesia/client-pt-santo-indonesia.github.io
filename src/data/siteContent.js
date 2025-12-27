@@ -167,6 +167,63 @@ export const heroContent = {
   ],
 }
 
+export const sponsorLandingContent = {
+  heroEyebrow: 'Company Profile',
+  heroTitle: 'PT. Santo Indonesia',
+  heroSubtitle: 'Packaging Machinery Specialist',
+  heroDescription:
+    'A quick overview of our company profile, solutions, projects, clients, and contact details.',
+  primaryCtaLabel: 'View Solutions',
+  secondaryCtaLabel: 'Chat on WhatsApp',
+  referenceTitle: 'Explore the full company profile',
+  referenceDescription:
+    'Each section below opens the dedicated page with deeper details and visuals.',
+  referenceCards: [
+    {
+      title: 'Home',
+      description: heroContent.subheadline,
+      href: '/',
+      ctaLabel: 'Go to Home',
+    },
+    {
+      title: 'About Us',
+      description: companyInfo.history.narrative,
+      href: '/about',
+      ctaLabel: 'Company Profile',
+    },
+    {
+      title: 'Solutions',
+      description: solutionsContent.heroDescription,
+      href: '/products',
+      ctaLabel: 'View Solutions',
+    },
+    {
+      title: 'Projects',
+      description: 'Recent turnkey packaging line integrations across multiple industries.',
+      href: '/projects',
+      ctaLabel: 'View Projects',
+    },
+    {
+      title: 'Clients',
+      description: 'Trusted collaborations with national FMCG, beverage, and cosmetics brands.',
+      href: '/clients',
+      ctaLabel: 'Our Clients',
+    },
+    {
+      title: 'Contact',
+      description: 'Talk directly with our engineering team for proposals, scope, and consultations.',
+      href: '/contact',
+      ctaLabel: 'Contact Us',
+    },
+  ],
+  projectsTitle: 'Project Highlights',
+  projectsDescription: 'Recent line integrations showcasing turnkey delivery and robotic automation.',
+  clientsTitle: 'Trusted by National Brands',
+  clientsDescription: 'Long-term collaborations across food, beverage, cosmetics, and pharmaceuticals.',
+  contactTitle: 'Talk with our engineering team',
+  contactDescription: 'Share your production target and we will recommend the right packaging line.',
+}
+
 export const heroSlides = [
   {
     id: 'robotic-line',

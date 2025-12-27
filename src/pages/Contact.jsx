@@ -111,7 +111,6 @@ const Contact = () => (
       </div>
     </section>
     <CtaBanner
-      tone="dark"
       eyebrow="Prefer to talk directly?"
       title="Contact us via WhatsApp or schedule an onsite visit."
       description="Our team responds within 24 business hours and can prepare an NDA if needed."

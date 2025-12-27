@@ -83,7 +83,6 @@ const Clients = () => {
         </div>
       </div>
       <CtaBanner
-        tone="light"
         eyebrow="Ready to be our next partner?"
         title="Start with a free assessment session for your priority line."
         description="Choose the production area or warehouse to optimize, and we will prepare an initial implementation proposal."

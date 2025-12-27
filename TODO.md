@@ -17,3 +17,6 @@
 - [x] Update client testimonials to be general and solution-agnostic.
 - [x] Ensure Our Clients UI shows a logo mark for every client entry.
 - [x] Run `npm run lint` after Our Clients updates.
+- [x] Add Instagram sponsor landing page that summarizes existing sections.
+- [x] Wire a manual-only route for the sponsor landing page (no main-site navigation).
+- [ ] Run `npm run lint` after adding the sponsor landing page. (Blocked: EACCES reading node_modules)
