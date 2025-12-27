@@ -4,7 +4,38 @@ import CtaBanner from '../components/CtaBanner'
 import { companyInfo, heroContent, heroSlides, services, eventsAndPartners } from '../data/siteContent'
 import santoLogo from '@assets/LOGO SANTO INDONESIA (kecil).jpg'
 
-const carouselSlides = heroSlides
+const machineImages = import.meta.glob('../../assets/machines/*.{jpg,JPG,jpeg,JPEG,png,PNG}', {
+  eager: true,
+  import: 'default',
+})
+
+const toMachineTitle = (path) => {
+  const filename = path.split('/').pop() || ''
+  const base = filename.replace(/\.[^/.]+$/, '')
+  const trimmed = base.replace(/^\d+\s+/, '').trim()
+  const cutAt = trimmed.search(/\b[Cc]atalogue\b|\(/)
+  const main = (cutAt === -1 ? trimmed : trimmed.slice(0, cutAt)).trim()
+  const words = main.split(/\s+/).filter(Boolean)
+  const label = words.slice(0, Math.max(1, words.length)).join(' ')
+
+  return label || companyInfo.name
+}
+
+const machineSlides = Object.entries(machineImages)
+  .sort(([pathA], [pathB]) => pathA.localeCompare(pathB, undefined, { numeric: true }))
+  .map(([path, image], index) => {
+    const slideNumber = String(index + 1).padStart(2, '0')
+    const title = toMachineTitle(path)
+    return {
+      id: `machine-${slideNumber}`,
+      title,
+      description: companyInfo.slogan,
+      location: companyInfo.tagline,
+      image,
+    }
+  })
+
+const carouselSlides = machineSlides.length > 0 ? machineSlides : heroSlides
 
 const navigationCards = [
   {
@@ -187,11 +218,11 @@ const Home = () => {
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="mx-auto flex h-36 w-36 items-center justify-center rounded-3xl bg-white p-2 sm:h-40 sm:w-40">
+            <div className="mx-auto flex h-36 w-36 items-center justify-center overflow-hidden rounded-3xl bg-white p-2 sm:h-40 sm:w-40">
               <img
                 src={santoLogo}
                 alt={`${companyInfo.name} monogram`}
-                className="h-full w-auto object-contain"
+                className="h-full w-full object-cover object-top"
                 loading="lazy"
                 decoding="async"
               />
