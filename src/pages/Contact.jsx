@@ -1,6 +1,21 @@
 import CtaBanner from '../components/CtaBanner'
 import { contactInfo } from '../data/siteContent'
 
+const CheckIcon = ({ className = '' }) => (
+  <svg
+    viewBox="0 0 20 20"
+    aria-hidden="true"
+    className={className}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M6 10.5l2.5 2.5L14 7" />
+  </svg>
+)
+
 const Contact = () => (
   <main>
     <section className="bg-brand-primary py-16 text-white">
@@ -71,9 +86,18 @@ const Contact = () => (
               </a>
             </div>
             <div className="mt-6 space-y-2 text-sm text-brand-secondary">
-              <p>✅ Include product type and hourly output target</p>
-              <p>✅ Attach photos of existing machines if available</p>
-              <p>✅ Note component brand preferences (PLC, robots, etc.)</p>
+              <p className="flex items-start gap-2">
+                <CheckIcon className="mt-1 h-4 w-4 flex-none text-brand-primary" />
+                <span>Include product type and hourly output target</span>
+              </p>
+              <p className="flex items-start gap-2">
+                <CheckIcon className="mt-1 h-4 w-4 flex-none text-brand-primary" />
+                <span>Attach photos of existing machines if available</span>
+              </p>
+              <p className="flex items-start gap-2">
+                <CheckIcon className="mt-1 h-4 w-4 flex-none text-brand-primary" />
+                <span>Note component brand preferences (PLC, robots, etc.)</span>
+              </p>
             </div>
           </div>
           <div className="rounded-3xl bg-white p-6 shadow-lg">
